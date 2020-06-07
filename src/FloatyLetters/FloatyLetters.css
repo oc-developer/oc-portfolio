@@ -1,0 +1,42 @@
+.floaty-letter {
+    color: cadetblue;
+    font-size: 10vw;
+}
+
+.floaty-ani-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: floaty-letter-x;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes floaty-letter-x {
+    from {
+        transform: translateX(-15%);
+    }
+    to {
+        transform: translateX(15%);
+    }
+}
+
+.floaty-ani-y {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: floaty-letter-y;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes floaty-letter-y {
+    from {
+        transform: translateY(-15%);
+    }
+    to {
+        transform: translateY(15%);
+    }
+}
