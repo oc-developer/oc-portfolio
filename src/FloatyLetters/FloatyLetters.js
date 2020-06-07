@@ -3,9 +3,9 @@ import './FloatyLetters.css'
 
 function FloatyLetters(props) {
     return (
-        <div className="floaty-ani-x" style={{ animationDuration: '2s' }}>
-            <div className="floaty-ani-y" style={{ animationDuration: '2s' }}>
-                <div className="floaty-letter">H</div>
+        <div className='floaty-ani-x' style={{ animationDuration: '2s' }}>
+            <div className='floaty-ani-y' style={{ animationDuration: '2s' }}>
+                <div className='floaty-letter'>H</div>
             </div>
         </div>
     );
