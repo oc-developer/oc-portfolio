@@ -3,6 +3,11 @@
     font-size: 10vw;
 }
 
+.floaty-box {
+    width: 100px;
+    height: 100px;
+}
+
 .floaty-ani-x {
     display: flex;
     align-items: center;
