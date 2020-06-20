@@ -45,3 +45,17 @@
         transform: translateY(15%);
     }
 }
+
+.fade-letter {
+    animation-name: fade-letter;
+    animation-duration: 4s;
+}
+
+@keyframes fade-letter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
