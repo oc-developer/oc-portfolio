@@ -2,27 +2,38 @@ import React from 'react'
 import './FloatyLetters.css'
 import useDimensions from 'react-use-dimensions'
 
-
 function FloatyLetters(props) {
+    const phraseList = props.word.split("");
+    const letters = phraseList.map((l, i) => {
+        return (
+            <FloatyLetter letter={l} key={i} maxDuration={props.maxDuration} minDuration={props.minDuration} />
+        )
+    })
+    return (
+        <div style={{display: "flex"}}>
+            {letters}
+        </div>
+    )
+}
+
+function FloatyLetter(props) {
     const [ref, letterSize] = useDimensions();
     const letterStyle = {
         width: letterSize.width,
         height: letterSize.width
     }
-    const maxDuration = 15
-    const minDuration = 5
 
-    const XAniDurationFn = randAniDurationInit(maxDuration, minDuration);
+    const XAniDurationFn = randAniDurationInit(props.maxDuration, props.minDuration);
     const XstartDirectionFn = aniDelayDirectionInit(XAniDurationFn());
-    
-    const YAniDurationFn = randAniDurationInit(maxDuration, minDuration);
+
+    const YAniDurationFn = randAniDurationInit(props.maxDuration, props.minDuration);
     const YstartDirectionFn = aniDelayDirectionInit(XAniDurationFn());
 
     return (
         <div className='floaty-box fade-letter' style={letterStyle}>
             <div className='floaty-ani-x' style={{ animationDuration: `${XAniDurationFn()}ms`, animationDelay: `-${XstartDirectionFn()}ms` }}>
                 <div className='floaty-ani-y' style={{ animationDuration: `${YAniDurationFn()}ms`, animationDelay: `-${YstartDirectionFn()}ms` }}>
-                    <div ref={ref} className='floaty-letter'>H</div>
+                    <div ref={ref} className='floaty-letter'>{props.letter}</div>
                 </div>
             </div>
         </div>
