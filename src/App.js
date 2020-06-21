@@ -6,8 +6,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <Logo/>
-        <FloatyLetters word="Welcome!" maxDuration={15} minDuration={5}/>
+      <Logo />
+      <div className="welcome-banner">
+        <FloatyLetters word="Welcome!" maxDuration={15} minDuration={5} />
+      </div>
     </div>
   );
 }

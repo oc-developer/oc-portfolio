@@ -6,11 +6,16 @@ function FloatyLetters(props) {
     const phraseList = props.word.split("");
     const letters = phraseList.map((l, i) => {
         return (
-            <FloatyLetter letter={l} key={i} maxDuration={props.maxDuration} minDuration={props.minDuration} />
+            <FloatyLetter
+                letter={l}
+                key={i}
+                maxDuration={props.maxDuration}
+                minDuration={props.minDuration}
+            />
         )
     })
     return (
-        <div style={{display: "flex"}}>
+        <div className="floaty-letters">
             {letters}
         </div>
     )
@@ -18,9 +23,11 @@ function FloatyLetters(props) {
 
 function FloatyLetter(props) {
     const [ref, letterSize] = useDimensions();
+    const height = isNaN(letterSize.height) ? 0 : letterSize.height;
+    
     const letterStyle = {
-        width: letterSize.width,
-        height: letterSize.width
+        width: height * 0.7,
+        height: height * 0.7
     }
 
     const XAniDurationFn = randAniDurationInit(props.maxDuration, props.minDuration);

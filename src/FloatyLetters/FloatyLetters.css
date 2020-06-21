@@ -1,3 +1,7 @@
+.floaty-letters {
+    display: flex;
+}
+
 .floaty-letter {
     color: cadetblue;
     font-size: 10vw;
