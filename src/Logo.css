@@ -1,7 +1,6 @@
 #ocd-logo {
     margin: 1rem;
     fill: transparent;
-    background-color: black;
     border-radius: 10%;
     padding: 10px;
 }
@@ -47,7 +46,7 @@
       fill: transparent;
     }
     to {
-      fill: white;
+      fill: #2F2F32;
     }
   }
   @keyframes stroke-logo-red {
