@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './Logo';
+import Logo from './Logo/Logo';
 import FloatyLetters from './FloatyLetters/FloatyLetters'
 import './App.css';
 
