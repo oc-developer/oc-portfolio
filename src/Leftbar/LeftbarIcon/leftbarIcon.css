@@ -1,15 +1,14 @@
 .leftbar-icon {
     width: 48px;
-    height: 48px;
+    height: 38px;
     cursor: pointer;
     position: relative;
 }
 
 .hamburger {
     width: 100%;
-    height: 8px;
+    height: 6px;
     border-radius: 8px;
-    margin-bottom: 8px;
 }
 
 .burger-line-top {
@@ -46,7 +45,7 @@
 
 .arrow-top {
     position: absolute;
-    height: 8px;
+    height: 6px;
     width: 24px;
     top: 16px;
     right: 0;
@@ -59,13 +58,13 @@
 
 .leftbar-icon:hover .arrow-top {
     transform: rotate(45deg);
-    top: 10px;
+    top: 9px;
     right: -3px;
 }
 
 .arrow-bottom {
     position: absolute;
-    height: 8px;
+    height: 6px;
     width: 24px;
     top: 16px;
     right: 0;
