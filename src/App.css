@@ -6,3 +6,17 @@
   position: relative;
   margin: 2rem;
 }
+
+.fade-in {
+  animation-name: intro-fade;
+  animation-duration: 4s;
+}
+
+@keyframes intro-fade {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

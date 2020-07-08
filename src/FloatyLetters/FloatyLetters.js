@@ -37,7 +37,7 @@ function FloatyLetter(props) {
     const YstartDirectionFn = aniDelayDirectionInit(XAniDurationFn());
 
     return (
-        <div className='floaty-box fade-letter' style={letterStyle}>
+        <div className='floaty-box fade-in' style={letterStyle}>
             <div className='floaty-ani-x' style={{ animationDuration: `${XAniDurationFn()}ms`, animationDelay: `-${XstartDirectionFn()}ms` }}>
                 <div className='floaty-ani-y' style={{ animationDuration: `${YAniDurationFn()}ms`, animationDelay: `-${YstartDirectionFn()}ms` }}>
                     <div ref={ref} className='floaty-letter'>{props.letter}</div>

@@ -12,7 +12,17 @@
 }
 
 .about {
-    margin: 3rem;
+    margin: 2rem 3rem;
     max-width: 600px;
+    animation: moveUp 2s ease 0s, intro-fade 4s ease 0s;
+}
 
+@keyframes moveUp {
+    0% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
