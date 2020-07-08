@@ -3,6 +3,7 @@
   fill: transparent;
   border-radius: 10%;
   padding: 10px;
+  animation: moveDown 2s ease;
 }
 
 .logo-main {
@@ -80,5 +81,14 @@
   to {
     stroke-opacity: 1;
     fill-opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

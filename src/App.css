@@ -8,11 +8,11 @@
 }
 
 .fade-in {
-  animation-name: intro-fade;
+  animation-name: fadeIn;
   animation-duration: 4s;
 }
 
-@keyframes intro-fade {
+@keyframes fadeIn {
   from {
       opacity: 0;
   }

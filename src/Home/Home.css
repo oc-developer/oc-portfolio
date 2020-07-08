@@ -14,7 +14,7 @@
 .about {
     margin: 2rem 3rem;
     max-width: 600px;
-    animation: moveUp 2s ease 0s, intro-fade 4s ease 0s;
+    animation: moveUp 2s ease 0s, fadeIn 4s ease 0s;
 }
 
 @keyframes moveUp {
