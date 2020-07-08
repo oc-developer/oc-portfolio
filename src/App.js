@@ -1,19 +1,15 @@
-import React from 'react';
-import Logo from './Logo/Logo';
-import FloatyLetters from './FloatyLetters/FloatyLetters'
-import Leftbar from './Leftbar/leftbar'
-import './App.css';
+import React from 'react'
+import './App.css'
+import Header from './Header/Header'
+import Home from './Home/Home'
 
 function App() {
   return (
-    <div className="App">
-      <div className="header">
-        <Logo />
-        <div className="welcome-banner">
-          <FloatyLetters word="Welcome!" maxDuration={15} minDuration={5} />
-        </div>
+    <div className="app">
+      <Header />
+      <div className="body">
+        <Home />
       </div>
-      <Leftbar />
     </div>
   );
 }

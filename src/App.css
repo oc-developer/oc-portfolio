@@ -1,9 +1,7 @@
-.App {
-  text-align: center;
+.app {
   width: 100%;
 }
 
-.welcome-banner {
-  display: flex;
-  justify-content: center;
+.body {
+  position: relative;
 }
