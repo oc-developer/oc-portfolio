@@ -1,5 +1,6 @@
 .floaty-letters {
     display: flex;
+    padding-right: 3vw;
 }
 
 .floaty-letter {

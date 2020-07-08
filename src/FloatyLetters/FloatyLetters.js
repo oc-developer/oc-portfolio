@@ -23,8 +23,8 @@ function FloatyLetters(props) {
 
 function FloatyLetter(props) {
     const [ref, letterSize] = useDimensions();
-    const height = isNaN(letterSize.height) ? 0 : letterSize.height;
-    
+    let height = isNaN(letterSize.height) ? 0 : letterSize.height;
+
     const letterStyle = {
         width: height * 0.7,
         height: height * 0.7

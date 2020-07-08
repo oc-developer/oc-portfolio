@@ -6,10 +6,10 @@ function Home() {
     return (
         <div className="home">
             <div className="welcome-banner">
-                <FloatyLetters word="Welcome!" maxDuration={15} minDuration={5} />
+                <FloatyLetters word="Hi" maxDuration={15} minDuration={5} />
+                <FloatyLetters word="there..." maxDuration={15} minDuration={5} />
             </div>
             <div className="about">
-                Hello internet!<br />
                 I’m a social software engineer with special love for web-based application development.
                 I enjoy being at the heart of the action, my passion is to bring people together and have fun.
                 I’ve studied software engineering and Interaction design and I’m fascinated by the synergy that occurs between good tooling and people.
