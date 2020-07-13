@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header/Header'
 import About from './About/About'
 import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
+import ButtonFn from  './ButtonFn/ButtonFn'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="body">
         <About />
         <DynamicLetters />
+        <ButtonFn />
       </div>
     </div>
   );
