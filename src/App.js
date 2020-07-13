@@ -3,7 +3,8 @@ import './App.css'
 import Header from './Header/Header'
 import About from './About/About'
 import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
-import ButtonFn from  './ButtonFn/ButtonFn'
+import ButtonFn from './ButtonFn/ButtonFn'
+import ButtonClass from './ButtonClass/ButtonClass'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <About />
         <DynamicLetters />
         <ButtonFn />
+        <ButtonClass />
       </div>
     </div>
   );
