@@ -15,7 +15,7 @@ export default class ButtonClass extends React.Component {
             <div>
                 <div>Random Value: {this.state.randVal}</div>
                 <div>Number of Clicks Value: {this.state.noClicks}</div>
-                <div className="button-class" onClick={e => this.setState({noClicks: this.state.noClicks + 1})}>Button Class</div>
+                <div className="button-class" onClick={e => this.setState({ noClicks: this.state.noClicks + 1 })}>Button Class</div>
             </div>
         )
     }
