@@ -9,7 +9,7 @@ function DynamicLetters() {
             <h1>Dynamic Letters</h1>
             <span>I wanted to create an organic animation to websites by creating motion to letters.</span>
             <br />
-            <input type="text" value={word} onChange={e => setWord(e.target.value)}></input>
+            <input type="text" value={word} onChange={e => setWord(e.target.value)}/>
             <FloatyLetters word={word} maxDuration={15} minDuration={5} />
         </div>
     )
