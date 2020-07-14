@@ -44,7 +44,7 @@ function FloatyLetter(props) {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 /**
