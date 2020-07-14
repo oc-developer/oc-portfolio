@@ -17,7 +17,7 @@ function Home() {
                 <br />
                 In my spare time I enjoy the outdoors, either the wonderful climbing walls around Gothenburg and Bohuslän or being out on the water when the wind kicks in kitesurfing.
                 I also enjoy music and singing together with friends.
-        </div>
+            </div>
         </div>
     )
 }
