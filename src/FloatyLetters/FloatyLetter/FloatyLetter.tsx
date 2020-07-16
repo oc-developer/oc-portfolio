@@ -1,8 +1,25 @@
 import React, { Component } from 'react'
 import './FloatyLetter.css'
 
-export default class FloatyLetter extends Component {
-    constructor(props) {
+export type FloatyLetterProps = {
+    maxDuration: number,
+    minDuration: number,
+    letter: string
+}
+
+type FloatyLetterState = {
+    style: {
+        width: number,
+        height: number
+    },
+    xStartDirection: number,
+    yStartDirection: number,
+    xDuration: number,
+    yDuration: number
+}
+
+export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLetterState> {
+    constructor(props: FloatyLetterProps) {
         super(props)
 
         const letterStyle = {
@@ -31,7 +48,7 @@ export default class FloatyLetter extends Component {
     * @param {number} minDuration - The min cycle duration
     * @returns {number} the duration.
     */
-    randDuration(maxDuration, minDuration) {
+    randDuration(maxDuration: number, minDuration: number) {
         const flexDuration = maxDuration * 1000 - minDuration * 1000;
         return Math.round(Math.random() * flexDuration + minDuration * 1000);
     }
@@ -40,7 +57,7 @@ export default class FloatyLetter extends Component {
     * Takes the animation cycle duration and makes sure the letter appears in the middle of the animation.
     * @param {number} loopDuration - The duration which one cyckle takes of the animation.
     */
-    randDirection(loopDuration) {
+    randDirection(loopDuration: number) {
         return Math.random() > 0.5 ? loopDuration / 2 : (loopDuration / 2) * 3;
     }
 
