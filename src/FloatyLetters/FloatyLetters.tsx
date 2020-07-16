@@ -2,7 +2,13 @@ import React from 'react'
 import './FloatyLetters.css'
 import useDimensions from 'react-use-dimensions'
 
-function FloatyLetters(props) {
+type Props = {
+    word: string,
+    maxDuration: number,
+    minDuration: number
+}
+
+function FloatyLetters(props: Props) {
     const phraseList = props.word.split("");
     const letters = phraseList.map((l, i) => {
         return (
@@ -21,7 +27,13 @@ function FloatyLetters(props) {
     )
 }
 
-function FloatyLetter(props) {
+type Prop = {
+    letter: string,
+    maxDuration: number,
+    minDuration: number
+}
+
+function FloatyLetter(props: Prop) {
     const [ref, letterSize] = useDimensions({ liveMeasure: false });
     let height = isNaN(letterSize.height) ? 0 : letterSize.height;
 
@@ -53,7 +65,7 @@ function FloatyLetter(props) {
 * @param {number} minDuration - The fastest time an animation cycle can take.
 * @returns {Function} the function with set max and min duration.
 */
-const randAniDurationInit = (maxDuration, minDuration) => () => {
+const randAniDurationInit = (maxDuration: number, minDuration: number) => () => {
     const flexDuration = maxDuration * 1000 - minDuration * 1000;
     return Math.round(Math.random() * flexDuration + minDuration * 1000);
 };
@@ -62,7 +74,7 @@ const randAniDurationInit = (maxDuration, minDuration) => () => {
 * Takes the animation cycle duration and makes sure the letter appears in the middle of the animation.
 * @param {number} loopDuration - The duration which one cyckle takes of the animation.
 */
-const aniDelayDirectionInit = loopDuration => () => {
+const aniDelayDirectionInit = (loopDuration: number) => () => {
     return Math.random() > 0.5 ? loopDuration / 2 : (loopDuration / 2) * 3;
 }
 
