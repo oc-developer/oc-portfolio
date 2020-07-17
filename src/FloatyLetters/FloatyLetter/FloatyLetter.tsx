@@ -2,52 +2,22 @@ import React, { Component } from 'react'
 import './FloatyLetter.css'
 import ReactDOM from 'react-dom'
 
-export type FloatyLetterProps = {
-    maxDuration: number,
-    minDuration: number,
-    letter: string
-}
-
-type FloatyLetterState = {
-    style: {
-        width: number,
-        height: number
-    },
-    xStartDirection: number,
-    yStartDirection: number,
-    xDuration: number,
-    yDuration: number,
-    contentHeight: number | undefined
-}
-
-const measureElement = (element: HTMLElement) => {
-    const DOMNode = ReactDOM.findDOMNode(element) as HTMLElement;
-    return DOMNode ? {
-        width: DOMNode.offsetWidth,
-        height: DOMNode.offsetHeight,
-    } : null;
-}
-
 export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLetterState> {
-    content: HTMLDivElement | null
+    content: HTMLDivElement | null = null
     constructor(props: FloatyLetterProps) {
         super(props)
 
-        const letterStyle = {
-            width: 0,
-            height: 0
-        }
+        const xDuration = randDuration(props.maxDuration, props.minDuration)
+        const yDuration = randDuration(props.maxDuration, props.minDuration);
 
-        this.content = null
-
-        const xDuration = this.randDuration(props.maxDuration, props.minDuration)
-        const xStartDirection = this.randDirection(xDuration)
-
-        const yDuration = this.randDuration(props.maxDuration, props.minDuration);
-        const yStartDirection = this.randDirection(yDuration);
+        const xStartDirection = randDirection(xDuration)
+        const yStartDirection = randDirection(yDuration);
 
         this.state = {
-            style: letterStyle,
+            style: {
+                width: 0,
+                height: 0
+            },
             xStartDirection: xStartDirection,
             xDuration: xDuration,
             yStartDirection: yStartDirection,
@@ -57,24 +27,8 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
     }
 
     /**
-    * Randomly picks a duration of an animation cycle within the limits.
-    * @param {number} maxDuration - The max cycle duration.
-    * @param {number} minDuration - The min cycle duration
-    * @returns {number} the duration.
-    */
-    randDuration(maxDuration: number, minDuration: number) {
-        const flexDuration = maxDuration * 1000 - minDuration * 1000;
-        return Math.round(Math.random() * flexDuration + minDuration * 1000);
-    }
-
-    /**
-    * Takes the animation cycle duration and makes sure the letter appears in the middle of the animation.
-    * @param {number} loopDuration - The duration which one cyckle takes of the animation.
-    */
-    randDirection(loopDuration: number) {
-        return Math.random() > 0.5 ? loopDuration / 2 : (loopDuration / 2) * 3;
-    }
-
+     * Measure the letter size to get a size of the animation container.
+     */
     componentDidMount() {
         let contentHeight = this.content && measureElement(this.content)?.height
         if (contentHeight) {
@@ -98,4 +52,53 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
             </div>
         )
     }
+}
+
+/**
+* Randomly picks a duration of an animation cycle within the limits.
+* @param {number} maxDuration - The max cycle duration.
+* @param {number} minDuration - The min cycle duration
+* @returns {number} the duration.
+*/
+const randDuration = (maxDuration: number, minDuration: number) => {
+    const flexDuration = maxDuration * 1000 - minDuration * 1000;
+    return Math.round(Math.random() * flexDuration + minDuration * 1000);
+}
+
+/**
+* Takes the animation cycle duration and makes sure the letter appears in the middle of the animation.
+* @param {number} loopDuration - The duration which one cyckle takes of the animation.
+*/
+const randDirection = (loopDuration: number) => {
+    return Math.random() > 0.5 ? loopDuration / 2 : (loopDuration / 2) * 3;
+}
+
+/**
+ * A function that measures the dom element. (Could be moved to a utils file?)
+ * @param element the dom element that should be measured.
+ */
+const measureElement = (element: HTMLElement) => {
+    const DOMNode = ReactDOM.findDOMNode(element) as HTMLElement;
+    return DOMNode ? {
+        width: DOMNode.offsetWidth,
+        height: DOMNode.offsetHeight,
+    } : null;
+}
+
+type FloatyLetterProps = {
+    maxDuration: number,
+    minDuration: number,
+    letter: string
+}
+
+type FloatyLetterState = {
+    style: {
+        width: number,
+        height: number
+    },
+    xStartDirection: number,
+    yStartDirection: number,
+    xDuration: number,
+    yDuration: number,
+    contentHeight: number | undefined
 }
