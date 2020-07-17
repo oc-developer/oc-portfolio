@@ -6,6 +6,7 @@ import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
 import ButtonFn from './ButtonFn/ButtonFn'
 import ButtonClass from './ButtonClass/ButtonClass'
 import FloatyLetter from './FloatyLetters/FloatyLetter/FloatyLetter'
+import FloatyLetters from './FloatyLetters/FloatyLettersClass'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <ButtonFn />
         <ButtonClass />
         <FloatyLetter letter="H" maxDuration={15} minDuration={5} />
+        <FloatyLetters/>
       </div>
     </div>
   );
