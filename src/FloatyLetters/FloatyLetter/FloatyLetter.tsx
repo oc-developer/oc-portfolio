@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './FloatyLetter.css'
+import ReactDOM from 'react-dom'
 
 export type FloatyLetterProps = {
     maxDuration: number,
@@ -15,17 +16,29 @@ type FloatyLetterState = {
     xStartDirection: number,
     yStartDirection: number,
     xDuration: number,
-    yDuration: number
+    yDuration: number,
+    contentHeight: number | undefined
+}
+
+const measureElement = (element: HTMLElement) => {
+    const DOMNode = ReactDOM.findDOMNode(element) as HTMLElement;
+    return DOMNode ? {
+        width: DOMNode.offsetWidth,
+        height: DOMNode.offsetHeight,
+    } : null;
 }
 
 export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLetterState> {
+    content: HTMLDivElement | null
     constructor(props: FloatyLetterProps) {
         super(props)
 
         const letterStyle = {
-            width: 70,
-            height: 70
+            width: 0,
+            height: 0
         }
+
+        this.content = null
 
         const xDuration = this.randDuration(props.maxDuration, props.minDuration)
         const xStartDirection = this.randDirection(xDuration)
@@ -38,7 +51,8 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
             xStartDirection: xStartDirection,
             xDuration: xDuration,
             yStartDirection: yStartDirection,
-            yDuration: yDuration
+            yDuration: yDuration,
+            contentHeight: undefined
         }
     }
 
@@ -61,12 +75,24 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
         return Math.random() > 0.5 ? loopDuration / 2 : (loopDuration / 2) * 3;
     }
 
+    componentDidMount() {
+        let contentHeight = this.content && measureElement(this.content)?.height
+        if (contentHeight) {
+            this.setState({
+                style: {
+                    width: contentHeight,
+                    height: contentHeight
+                }
+            })
+        }
+    }
+
     render() {
         return (
             <div className='floaty-box fade-in' style={this.state.style}>
                 <div className='floaty-ani-x' style={{ animationDuration: `${this.state.xDuration}ms`, animationDelay: `-${this.state.xStartDirection}ms` }}>
                     <div className='floaty-ani-y' style={{ animationDuration: `${this.state.yDuration}ms`, animationDelay: `-${this.state.yStartDirection}ms` }}>
-                        <div className='floaty-letter'>{this.props.letter}</div>
+                        <div ref={r => this.content = r} className='floaty-letter'>{this.props.letter}</div>
                     </div>
                 </div>
             </div>
