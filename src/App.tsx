@@ -18,7 +18,7 @@ function App() {
         <ButtonFn />
         <ButtonClass />
         <FloatyLetter letter="H" maxDuration={15} minDuration={5} />
-        <FloatyLetters/>
+        <FloatyLetters phrase="Hello" maxDuration={15} minDuration={5} />
       </div>
     </div>
   );
