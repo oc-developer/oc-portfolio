@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './DynamicLetters.css'
 import FloatyLetters from '../../FloatyLetters/FloatyLetters'
 
-function DynamicLetters() {
+export default function DynamicLetters() {
     const [word, setWord] = useState('Example...')
     return (
         <div className="dynamic-letters">
@@ -14,5 +14,3 @@ function DynamicLetters() {
         </div>
     )
 }
-
-export default DynamicLetters
