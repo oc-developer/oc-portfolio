@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DynamicLetters.css'
-import FloatyLetters from '../../FloatyLetters/FloatyLetters'
+import FloatyLetters from '../../FloatyLetters/FloatyLettersClass'
 
 function DynamicLetters() {
     const [word, setWord] = useState('Example...')
@@ -10,7 +10,7 @@ function DynamicLetters() {
             <span>I wanted to create an organic animation to websites by creating motion to letters.</span>
             <br />
             <input type="text" value={word} onChange={e => setWord(e.target.value)}/>
-            <FloatyLetters word={word} maxDuration={15} minDuration={5} />
+            <FloatyLetters phrase={word} maxDuration={15} minDuration={5} />
         </div>
     )
 }

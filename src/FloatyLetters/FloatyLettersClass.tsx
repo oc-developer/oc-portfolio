@@ -5,28 +5,27 @@ import './FloatyLetters.css'
 export default class FloatyLettersClass extends Component<FloatyLettersProps, FloatyLettersState> {
     constructor(props: FloatyLettersProps) {
         super(props)
+    }
 
-        const phraseList = props.phrase.split("");
-        const letters = phraseList.map((l, i) => {
+    createPhrase = () => {
+        const phraseList = this.props.phrase.split("");
+        return phraseList.map((l, i) => {
             return (
                 <FloatyLetter
                     letter={l}
                     key={i}
-                    maxDuration={props.maxDuration}
-                    minDuration={props.minDuration}
+                    maxDuration={this.props.maxDuration}
+                    minDuration={this.props.minDuration}
                 />
             )
         })
-        this.state = {
-            letters: letters
-        }
     }
 
     render() {
         return (
             <div>
                 <div className="floaty-letters">
-                    {this.state.letters}
+                    {this.createPhrase()}
                 </div>
             </div>
         )
