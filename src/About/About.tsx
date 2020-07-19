@@ -6,8 +6,8 @@ function Home() {
     return (
         <div className="home">
             <div className="welcome-banner">
-                <FloatyLetters word="Hi" maxDuration={15} minDuration={5} />
-                <FloatyLetters word="there..." maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="Hi" maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="there..." maxDuration={15} minDuration={5} />
             </div>
             <div className="about">
                 I’m a social software engineer with special love for web-based application development.
@@ -17,7 +17,7 @@ function Home() {
                 <br />
                 In my spare time I enjoy the outdoors, either the wonderful climbing walls around Gothenburg and Bohuslän or being out on the water when the wind kicks in kitesurfing.
                 I also enjoy music and singing together with friends.
-        </div>
+            </div>
         </div>
     )
 }
