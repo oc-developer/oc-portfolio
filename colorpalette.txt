@@ -1,5 +1,0 @@
-background: F6F7F2
-blackish: 2F2F32
-reddish: 836C68
-grayish: BFC4BD
-greenish: 4E4A3C
