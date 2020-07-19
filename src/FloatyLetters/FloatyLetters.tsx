@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import FloatyLetter from './FloatyLetter/FloatyLetter'
 import './FloatyLetters.css'
 
-export default class FloatyLettersClass extends Component<FloatyLettersProps, FloatyLettersState> {
+export default class FloatyLetters extends Component<FloatyLettersProps, FloatyLettersState> {
     createPhrase = () => {
         const phraseList = this.props.phrase.split("");
         return phraseList.map((l, i) => {
