@@ -3,10 +3,6 @@ import FloatyLetter from './FloatyLetter/FloatyLetter'
 import './FloatyLetters.css'
 
 export default class FloatyLettersClass extends Component<FloatyLettersProps, FloatyLettersState> {
-    constructor(props: FloatyLettersProps) {
-        super(props)
-    }
-
     createPhrase = () => {
         const phraseList = this.props.phrase.split("");
         return phraseList.map((l, i) => {
