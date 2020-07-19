@@ -3,10 +3,6 @@ import './App.css'
 import Header from './Header/Header'
 import About from './About/About'
 import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
-import ButtonFn from './ButtonFn/ButtonFn'
-import ButtonClass from './ButtonClass/ButtonClass'
-import FloatyLetter from './FloatyLetters/FloatyLetter/FloatyLetter'
-import FloatyLetters from './FloatyLetters/FloatyLettersClass'
 
 function App() {
   return (
@@ -15,10 +11,6 @@ function App() {
       <div className="body">
         <About />
         <DynamicLetters />
-        <ButtonFn />
-        <ButtonClass />
-        <FloatyLetter letter="H" maxDuration={15} minDuration={5} />
-        <FloatyLetters phrase="Hello" maxDuration={15} minDuration={5} />
       </div>
     </div>
   );
