@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DynamicLetters.css'
-import FloatyLetters from '../../FloatyLetters/FloatyLettersClass'
+import FloatyLetters from '../../FloatyLetters/FloatyLetters'
 
 function DynamicLetters() {
     const [word, setWord] = useState('Example...')

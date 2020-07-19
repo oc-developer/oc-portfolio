@@ -1,5 +1,5 @@
 import React from 'react'
-import FloatyLetters from '../FloatyLetters/FloatyLettersClass'
+import FloatyLetters from '../FloatyLetters/FloatyLetters'
 import './About.css'
 
 function Home() {
