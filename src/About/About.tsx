@@ -1,13 +1,13 @@
 import React from 'react'
-import FloatyLetters from '../FloatyLetters/FloatyLetters'
+import FloatyLetters from '../FloatyLetters/FloatyLettersClass'
 import './About.css'
 
 function Home() {
     return (
         <div className="home">
             <div className="welcome-banner">
-                <FloatyLetters word="Hi" maxDuration={15} minDuration={5} />
-                <FloatyLetters word="there..." maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="Hi" maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="there..." maxDuration={15} minDuration={5} />
             </div>
             <div className="about">
                 I’m a social software engineer with special love for web-based application development.
