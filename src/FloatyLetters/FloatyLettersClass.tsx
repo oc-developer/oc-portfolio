@@ -25,7 +25,6 @@ export default class FloatyLettersClass extends Component<FloatyLettersProps, Fl
     render() {
         return (
             <div>
-                <FloatyLetter letter="A" maxDuration={15} minDuration={5} />
                 <div className="floaty-letters">
                     {this.state.letters}
                 </div>
