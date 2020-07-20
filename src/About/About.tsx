@@ -2,12 +2,12 @@ import React from 'react'
 import FloatyLetters from '../FloatyLetters/FloatyLetters'
 import './About.css'
 
-function Home() {
+export default function Home() {
     return (
         <div className="home">
             <div className="welcome-banner">
-                <FloatyLetters phrase="Hi" maxDuration={15} minDuration={5} />
-                <FloatyLetters phrase="there..." maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="HI" maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="THERE..." maxDuration={15} minDuration={5} />
             </div>
             <div className="about">
                 I’m a social software engineer with special love for web-based application development.
@@ -21,5 +21,3 @@ function Home() {
         </div>
     )
 }
-
-export default Home
