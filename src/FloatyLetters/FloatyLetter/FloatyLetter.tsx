@@ -1,30 +1,31 @@
 import React, { Component } from 'react'
 import './FloatyLetter.css'
 import ReactDOM from 'react-dom'
+import memoize from "memoize-one";
 
 export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLetterState> {
     content: HTMLDivElement | null = null
     constructor(props: FloatyLetterProps) {
         super(props)
 
-        const xDuration = randDuration(props.maxDuration, props.minDuration)
-        const yDuration = randDuration(props.maxDuration, props.minDuration)
-
-        const xStartDirection = randDirection(xDuration)
-        const yStartDirection = randDirection(yDuration)
-
         this.state = {
             style: {
                 width: 0,
                 height: 0
             },
-            xStartDirection: xStartDirection,
-            xDuration: xDuration,
-            yStartDirection: yStartDirection,
-            yDuration: yDuration,
-            contentHeight: undefined
+            contentHeight: undefined,
+            xStartDirection: randDirection(),
+            yStartDirection: randDirection()
         }
     }
+
+    xDurationMem = memoize(
+        (maxDuration, minDuration) => randDuration(maxDuration, minDuration)
+    )
+
+    yDurationMem = memoize(
+        (maxDuration, minDuration) => randDuration(maxDuration, minDuration)
+    )
 
     /**
      * Measure the letter size to get a size of the animation container.
@@ -42,11 +43,26 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
     }
 
     render() {
+        const xDuration = this.xDurationMem(this.props.maxDuration, this.props.minDuration)
+        const yDuration = this.yDurationMem(this.props.maxDuration, this.props.minDuration)
+
+        const yStartDirection = StartDirection(yDuration, this.state.xStartDirection)
+        const xStartDirection = StartDirection(xDuration, this.state.yStartDirection)
+
         return (
             <div className='floaty-box fade-in' style={this.state.style}>
-                <div className='floaty-ani-x' style={{ animationDuration: `${this.state.xDuration}ms`, animationDelay: `-${this.state.xStartDirection}ms` }}>
-                    <div className='floaty-ani-y' style={{ animationDuration: `${this.state.yDuration}ms`, animationDelay: `-${this.state.yStartDirection}ms` }}>
-                        <div ref={r => this.content = r} className='floaty-letter'>{this.props.letter}</div>
+                <div className='floaty-ani-x'
+                    style={{
+                        animationDuration: `${xDuration}ms`,
+                        animationDelay: `-${xStartDirection}ms`
+                    }}>
+                    <div className='floaty-ani-y'
+                        style={{
+                            animationDuration: `${yDuration}ms`,
+                            animationDelay: `-${yStartDirection}ms`
+                        }}>
+                        <div ref={r => this.content = r}
+                            className='floaty-letter'>{this.props.letter}</div>
                     </div>
                 </div>
             </div>
@@ -69,8 +85,16 @@ const randDuration = (maxDuration: number, minDuration: number) => {
 * Takes the animation cycle duration and makes sure the letter appears in the middle of the animation.
 * @param {number} loopDuration - The duration which one cyckle takes of the animation.
 */
-const randDirection = (loopDuration: number) => {
-    return Math.random() > 0.5 ? loopDuration / 2 : (loopDuration / 2) * 3;
+const randDirection = () => {
+    return Math.random() > 0.5 ? true : false;
+}
+
+/**
+* Takes the animation cycle duration and makes sure the letter appears in the middle of the animation.
+* @param {number} loopDuration - The duration which one cyckle takes of the animation.
+*/
+const StartDirection = (loopDuration: number, direction: boolean) => {
+    return direction ? loopDuration / 2 : (loopDuration / 2) * 3;
 }
 
 /**
@@ -96,9 +120,7 @@ type FloatyLetterState = {
         width: number,
         height: number
     },
-    xStartDirection: number,
-    yStartDirection: number,
-    xDuration: number,
-    yDuration: number,
+    xStartDirection: boolean,
+    yStartDirection: boolean,
     contentHeight: number | undefined
 }
