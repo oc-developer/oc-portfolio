@@ -26,10 +26,6 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
         }
     }
 
-    static getDerivedStateFromProps(props: FloatyLetterProps, state: FloatyLetterState) {
-        console.log("Get drevived sate", props, state);
-    }
-
     /**
      * Measure the letter size to get a size of the animation container.
      */
