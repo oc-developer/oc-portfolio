@@ -7,10 +7,12 @@ import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
 function App() {
   return (
     <div className="app">
-      <Header />
-      <div className="body">
-        <About />
-        <DynamicLetters />
+      <div className="main">
+        <Header />
+        <div className="content">
+          <About />
+          <DynamicLetters />
+        </div>
       </div>
     </div>
   );

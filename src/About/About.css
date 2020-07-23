@@ -3,18 +3,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10vh;
 }
 
 .welcome-banner {
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    font-size: 3rem;
 }
 
 .about {
-    margin: 2rem 3rem;
-    max-width: 600px;
+    margin: 2rem 0;
     animation: moveUp 2s ease 0s, fadeIn 4s ease 0s;
 }
 

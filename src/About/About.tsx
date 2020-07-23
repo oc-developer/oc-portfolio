@@ -6,10 +6,9 @@ export default function Home() {
     return (
         <div className="home">
             <div className="welcome-banner">
-                <FloatyLetters phrase="HI" maxDuration={15} minDuration={5} />
-                <FloatyLetters phrase="THERE..." maxDuration={15} minDuration={5} />
+                <FloatyLetters phrase="HI_THERE..." maxDuration={15} minDuration={5} />
             </div>
-            <div className="about">
+            <span className="about">
                 I’m a social software engineer with special love for web-based application development.
                 I enjoy being at the heart of the action, my passion is to bring people together and have fun.
                 I’ve studied software engineering and Interaction design and I’m fascinated by the synergy that occurs between good tooling and people.
@@ -17,7 +16,7 @@ export default function Home() {
                 <br />
                 In my spare time I enjoy the outdoors, either the wonderful climbing walls around Gothenburg and Bohuslän or being out on the water when the wind kicks in kitesurfing.
                 I also enjoy music and singing together with friends.
-            </div>
+            </span>
         </div>
     )
 }

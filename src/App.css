@@ -1,10 +1,20 @@
 .app {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
-.body {
+.main {
+  width: 100%;
+  max-width: 900px;
+}
+
+.content {
   position: relative;
-  margin: 2rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .fade-in {

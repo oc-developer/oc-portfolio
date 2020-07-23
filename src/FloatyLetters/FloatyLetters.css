@@ -1,16 +1,9 @@
 .floaty-letters {
     display: flex;
-    padding-right: 3vw;
 }
 
 .floaty-letter {
     color: #2F2F32;
-    font-size: 7vw;
-}
-
-.floaty-box {
-    width: 100px;
-    height: 100px;
 }
 
 .floaty-ani-x {

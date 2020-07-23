@@ -3,7 +3,6 @@
     height: 38px;
     cursor: pointer;
     position: relative;
-    margin: 1rem;
     animation: fadeIn 3s ease, moveSide 2s ease;
 }
 
