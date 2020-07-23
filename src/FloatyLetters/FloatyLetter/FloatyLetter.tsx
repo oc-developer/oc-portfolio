@@ -8,10 +8,10 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
         super(props)
 
         const xDuration = randDuration(props.maxDuration, props.minDuration)
-        const yDuration = randDuration(props.maxDuration, props.minDuration);
+        const yDuration = randDuration(props.maxDuration, props.minDuration)
 
         const xStartDirection = randDirection(xDuration)
-        const yStartDirection = randDirection(yDuration);
+        const yStartDirection = randDirection(yDuration)
 
         this.state = {
             style: {
@@ -24,6 +24,10 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
             yDuration: yDuration,
             contentHeight: undefined
         }
+    }
+
+    static getDerivedStateFromProps(props: FloatyLetterProps, state: FloatyLetterState) {
+        console.log("Get drevived sate", props, state);
     }
 
     /**
