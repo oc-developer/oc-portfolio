@@ -13,6 +13,7 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
                 width: 0,
                 height: 0
             },
+            isSpace: props.letter === ' ',
             contentHeight: undefined,
             xStartDirection: randDirection(),
             yStartDirection: randDirection()
@@ -49,6 +50,8 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
         const yStartDirection = StartDirection(yDuration, this.state.xStartDirection)
         const xStartDirection = StartDirection(xDuration, this.state.yStartDirection)
 
+        const letter = this.state.isSpace ? '_' : this.props.letter
+
         return (
             <div className='floaty-box fade-in' style={this.state.style}>
                 <div className='floaty-ani-x'
@@ -62,7 +65,8 @@ export default class FloatyLetter extends Component<FloatyLetterProps, FloatyLet
                             animationDelay: `-${yStartDirection}ms`
                         }}>
                         <div ref={r => this.content = r}
-                            className='floaty-letter'>{this.props.letter}</div>
+                            className='floaty-letter'
+                            style={this.state.isSpace ? { visibility: "hidden" } : {}}>{letter}</div>
                     </div>
                 </div>
             </div>
@@ -120,6 +124,7 @@ type FloatyLetterState = {
         width: number,
         height: number
     },
+    isSpace: boolean,
     xStartDirection: boolean,
     yStartDirection: boolean,
     contentHeight: number | undefined
