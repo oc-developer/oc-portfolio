@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './DynamicLetters.css'
 import FloatyLetters from '../../FloatyLetters/FloatyLetters'
+import demoLetter from './demoLetter/demoLetter'
 
 export default function DynamicLetters() {
     const placeholder = 'Example...'
