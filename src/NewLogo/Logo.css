@@ -1,0 +1,22 @@
+.logo-robot {
+    animation-name: robot-rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: rotate(-90deg);
+    animation-delay: 2s;
+}
+
+.logo-o {
+    
+}
+
+@keyframes robot-rotate {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
