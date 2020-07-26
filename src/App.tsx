@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header/Header'
 import About from './About/About'
 import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
+import Bee from './Bee/Bee'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <About />
           <DynamicLetters />
         </div>
+        <Bee/>
       </div>
     </div>
   );

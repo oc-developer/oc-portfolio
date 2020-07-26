@@ -1,0 +1,21 @@
+.bee-wing {
+    animation-name: wing-animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-direction: alternate;
+    animation-duration: 100ms;
+}
+
+.bee-wing.backbeat {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes wing-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
