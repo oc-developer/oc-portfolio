@@ -91,4 +91,4 @@ export default function DynamicLetters() {
     )
 }
 
-const randDuration = () => Math.random() + 0.1
+const randDuration = () => Math.random() + 0.5
