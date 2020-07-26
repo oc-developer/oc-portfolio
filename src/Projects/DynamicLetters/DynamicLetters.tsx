@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './DynamicLetters.css'
 import FloatyLetters from '../../FloatyLetters/FloatyLetters'
-import demoLetter from './demoLetter/demoLetter'
+import DemoLetter from './DemoLetter/DemoLetter'
 
 export default function DynamicLetters() {
     const placeholder = 'Example...'
@@ -24,10 +24,8 @@ export default function DynamicLetters() {
             <span>
                 Floaty letter is based on css animation and uses an infinite loop of translate. It contains three boxes:
                 The X-Box moving the letter in the x-axis.
-                </span>
-            <div className="floaty-demo">
-                <div className="demo-box x-box"></div>
-            </div>
+            </span>
+            <DemoLetter xColor={true} />
             <span>
                 The Y-box moving the letter in y-axis.
             </span>
