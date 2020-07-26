@@ -23,83 +23,58 @@ export default function DynamicLetters() {
             </span>
             <span>
                 Floaty letter is based on css animation and uses an infinite loop of translate. It contains three boxes:
-                The X-Box moving the letter in the x-axis.
             </span>
-            <DemoLetter xColor={true} />
-            <span>
-                The Y-box moving the letter in y-axis.
-            </span>
-            <div className="floaty-demo">
-                <div className="demo-box y-box"></div>
-            </div>
-            <span>
-                ...and the letter.
-            </span>
-            <div className="floaty-demo">
-                <div className="demo-box letter-box">
-                    A
+            <div style={{ display: "flex" }}>
+                <div className="title-box">
+                    <span><b>X-Box</b></span>
+                    <DemoLetter showX={true} xDuration={1} />
+                </div>
+                <div className="title-box">
+                    <span><b>Y-Box</b></span>
+                    <DemoLetter showY={true} yDuration={1} />
+                </div>
+                <div className="title-box">
+                    <span><b>Letter-Box</b></span>
+                    <DemoLetter letter="H" letterBg={true} />
                 </div>
             </div>
             <span>
-                Putting these boxes together create an moving letter, but not very organic.
+                Putting these boxes together create a moving letter, but not very organic...
             </span>
-            <div className="floaty-demo">
-                <div className="demo-box x-box">
-                    <div className="demo-box y-box">
-                        <div className="demo-box letter-box">A</div>
-                    </div>
-                </div>
+            <div style={{ display: "flex" }}>
+                <DemoLetter showX={true} xDuration={1} showY={true} yDuration={1} letter="H" letterBg={true} />
+                <DemoLetter letter="H" xDuration={1} yDuration={1} />
             </div>
             <span>
                 ...however having different animation durations on the x and y-axis creates the feeling of the letter moving in an arbitrary way.
             </span>
-            <div className="floaty-demo">
-                <div className="demo-box x-box slow-box">
-                    <div className="demo-box y-box">
-                        <div className="demo-box letter-box">A</div>
-                    </div>
-                </div>
-            </div>
-            <span>
-                With no background colors it looks even better.
-            </span>
-            <div className="floaty-demo">
-                <div className="demo-box x-box slow-box no-color">
-                    <div className="demo-box y-box no-color">
-                        <div className="demo-box letter-box no-color">A</div>
-                    </div>
-                </div>
+            <div style={{ display: "flex" }}>
+                <DemoLetter showX={true} showY={true} letterBg={true} xDuration={1} yDuration={0.651} letter="H" />
+                <DemoLetter xDuration={1} yDuration={0.651} letter="H" />
             </div>
             <span>
                 Using this technique when creating a phrase shows that it is important to have variation for each letter.
             </span>
-            <div className="floaty-demo">
-                <div className="demo-box x-box slow-box no-color">
-                    <div className="demo-box y-box no-color">
-                        <div className="demo-box letter-box no-color">H</div>
-                    </div>
-                </div>
-                <div className="demo-box x-box slow-box no-color">
-                    <div className="demo-box y-box no-color">
-                        <div className="demo-box letter-box no-color">e</div>
-                    </div>
-                </div>
-                <div className="demo-box x-box slow-box no-color">
-                    <div className="demo-box y-box no-color">
-                        <div className="demo-box letter-box no-color">l</div>
-                    </div>
-                </div>
-                <div className="demo-box x-box slow-box no-color">
-                    <div className="demo-box y-box no-color">
-                        <div className="demo-box letter-box no-color">l</div>
-                    </div>
-                </div>
-                <div className="demo-box x-box slow-box no-color">
-                    <div className="demo-box y-box no-color">
-                        <div className="demo-box letter-box no-color">o</div>
-                    </div>
-                </div>
+            <div style={{ display: "flex" }}>
+                <DemoLetter xDuration={1} yDuration={0.651} letter="H" />
+                <DemoLetter xDuration={1} yDuration={0.651} letter="E" />
+                <DemoLetter xDuration={1} yDuration={0.651} letter="L" />
+                <DemoLetter xDuration={1} yDuration={0.651} letter="L" />
+                <DemoLetter xDuration={1} yDuration={0.651} letter="O" />
             </div>
+            <span>Randomize each letter basically gets us the floaty letter package...</span>
+            <div style={{ display: "flex" }}>
+                <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="H" />
+                <DemoLetter xDuration={1} yDuration={randDuration()} letter="E" />
+                <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="L" />
+                <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="L" />
+                <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="O" />
+            </div>
+            <span>Slowing it down, randomize startring position and direction, makes it a nice ambient and organic feel...</span>
+            <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO" />
+
+            <h2>Try it your self:</h2>
+
             <div className="settings">
                 <input className="dynamic-text-input" type="text" placeholder={placeholder} value={phrase} onChange={e => setPhrase(e.target.value)} />
                 <br />
@@ -115,3 +90,5 @@ export default function DynamicLetters() {
         </div>
     )
 }
+
+const randDuration = () => Math.random() + 0.1
