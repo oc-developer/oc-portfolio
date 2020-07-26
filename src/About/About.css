@@ -9,11 +9,25 @@
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    position: relative;
 }
 
 .about {
     margin: 2rem 0;
     animation: moveUp 2s ease 0s, fadeIn 4s ease 0s;
+}
+
+.bee-move {
+    animation: bee-move 2s ease infinite;
+}
+
+@keyframes bee-move {
+    from {
+        transform: translate(-100%);
+    }
+    to {
+        transform: translate(0%);
+    }
 }
 
 @keyframes moveUp {

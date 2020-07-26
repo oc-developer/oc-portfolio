@@ -1,12 +1,16 @@
 import React from 'react'
 import FloatyLetters from '../FloatyLetters/FloatyLetters'
+import Bee from '../Bee/Bee'
 import './About.css'
 
 export default function Home() {
     return (
         <div className="home">
             <div className="welcome-banner">
-                <FloatyLetters phrase="HI THERE..." maxDuration={15} minDuration={5} />
+                <div className="bee-move">
+                    <Bee />
+                </div>
+                {/* <FloatyLetters phrase="HI THERE..." maxDuration={15} minDuration={5} /> */}
             </div>
             <span className="about">
                 I’m a social software engineer with special love for web-based application development.
