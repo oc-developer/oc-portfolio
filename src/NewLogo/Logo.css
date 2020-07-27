@@ -4,19 +4,67 @@
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    transform: rotate(-90deg);
     animation-delay: 2s;
+    overflow: visible;
+}
+
+.robot-eyes {
+    animation-name: open-eyes;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.logo-letter {
+    animation-timing-function: cubic-bezier(0.46, 0.42, 0.72, 1);
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .logo-o {
-    
+    animation-name: o-trans;
+}
+
+.logo-d {
+    animation-name: d-trans;
+}
+
+@keyframes open-eyes {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes robot-rotate {
     from {
-        transform: rotate(-90deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(0deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes o-trans {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes d-trans {
+    from {
+        transform: translateX(25%);
+    }
+    to {
+        transform: translateX(0);
     }
 }

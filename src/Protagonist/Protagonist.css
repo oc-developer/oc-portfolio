@@ -11,3 +11,15 @@
     justify-content: space-evenly;
     background-color: cornflowerblue;
 }
+
+.protagonist-section .protagonist-tab {
+    position: relative;
+    width: 88%;
+    box-sizing: border-box;
+}
+
+.protagonist-section .protagonist-tab .tab {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+}
