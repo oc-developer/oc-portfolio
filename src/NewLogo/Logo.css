@@ -1,0 +1,89 @@
+.logo-robot {
+    animation-name: robot-rotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    overflow: visible;
+}
+
+.robot-eyes {
+    animation-name: open-eyes;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.mini-logo {
+    opacity: 0;
+    animation-name: open-eyes;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.mini-logo.letter-o {
+    animation-delay: 3500ms;
+}
+.mini-logo.letter-c {
+    animation-delay: 3750ms;
+}
+.mini-logo.letter-d {
+    animation-delay: 4000ms;
+}
+
+.logo-letter {
+    animation-timing-function: cubic-bezier(0.46, 0.42, 0.72, 1);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.logo-o {
+    animation-name: o-trans;
+}
+
+.logo-d {
+    animation-name: d-trans;
+}
+
+@keyframes open-eyes {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes robot-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes o-trans {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes d-trans {
+    from {
+        transform: translateX(25%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
