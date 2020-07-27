@@ -13,14 +13,14 @@
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 .logo-letter {
     animation-timing-function: cubic-bezier(0.46, 0.42, 0.72, 1);
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
