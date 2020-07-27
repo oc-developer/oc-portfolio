@@ -12,12 +12,6 @@ function App() {
       <Header />
       <Protagonist />
       <Notes />
-      <div className="main">
-        <div className="content">
-          <About />
-          <DynamicLetters />
-        </div>
-      </div>
     </div>
   );
 }
