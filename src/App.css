@@ -4,11 +4,20 @@
 }
 
 .section {
+  width: 1280px;
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
   margin: 40px auto 0;
   padding: 40px;
+}
+
+.section .dash {
+  background-color: white;
+  height: 4px;
+  width: 20%;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .grid-items {

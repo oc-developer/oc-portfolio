@@ -3,14 +3,6 @@
     color: whitesmoke;
     flex: 90%;
     height: 400px;
-    cursor: pointer;
-    transition-timing-function: ease-in-out;
-    transition-duration: .2s;
-}
-
-.note-floaty-letter:hover {
-    border-radius: 32px;
-    transform: scale(1.1, 1.1);
 }
 
 .note-text {
@@ -23,8 +15,4 @@
     width: 20%;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
-}
-
-.note-floaty-letter:hover .dash {
-    width: 25%;
 }
