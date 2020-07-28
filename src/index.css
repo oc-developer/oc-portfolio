@@ -18,6 +18,10 @@ h2 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #root {
   height: 100%;
 }
