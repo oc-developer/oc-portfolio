@@ -1,0 +1,10 @@
+.note-floaty-letter {
+    background-color: crimson;
+    color: whitesmoke;
+    flex: 100%;
+    height: 400px;
+}
+
+.note-text {
+    max-width: 400px;
+}

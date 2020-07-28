@@ -1,21 +1,15 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 import Header from './Header/Header'
-import About from './About/About'
-import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
 import Protagonist from './Protagonist/Protagonist'
+import Notes from './Notes/Notes'
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <Protagonist />
-      <div className="main">
-        <Header />
-        <div className="content">
-          <About />
-          <DynamicLetters />
-        </div>
-      </div>
+      <Notes />
     </div>
   );
 }
