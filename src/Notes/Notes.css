@@ -1,10 +1,30 @@
 .note-floaty-letter {
     background-color: crimson;
     color: whitesmoke;
-    flex: 100%;
+    flex: 90%;
     height: 400px;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+
+.note-floaty-letter:hover {
+    border-radius: 32px;
+    transform: scale(1.1, 1.1);
 }
 
 .note-text {
     max-width: 400px;
+}
+
+.dash {
+    background-color: white;
+    height: 4px;
+    width: 20%;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.note-floaty-letter:hover .dash {
+    width: 25%;
 }
