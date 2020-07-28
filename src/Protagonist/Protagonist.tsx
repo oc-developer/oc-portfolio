@@ -1,7 +1,7 @@
 import React from 'react'
 import './Protagonist.css'
 
-import Logo from '../NewLogo/Logo'
+import Logo from '../Logo/Logo'
 
 export default function Protagonist() {
     return (
