@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 import Header from './Header/Header'
 import Protagonist from './Protagonist/Protagonist'
 import Notes from './Notes/Notes'
