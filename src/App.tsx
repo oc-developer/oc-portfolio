@@ -1,16 +1,25 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import './App.scss'
+
 import Header from './Header/Header'
-import Protagonist from './Protagonist/Protagonist'
-import Notes from './Notes/Notes'
+import Main from './Main/Main'
+import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Protagonist />
-      <Notes />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Route exact path='/floaty-letter' render={() => (
+          <DynamicLetters />
+        )} />
+        <Route exact path="/" render={() => (
+          <Main />
+        )} />
+      </div>
+    </Router>
   );
 }
 

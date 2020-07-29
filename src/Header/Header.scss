@@ -1,0 +1,13 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    .leftbar-btn {
+        position: absolute;
+        left: 0;
+    }
+}

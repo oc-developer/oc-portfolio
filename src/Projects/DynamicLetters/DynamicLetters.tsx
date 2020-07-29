@@ -14,7 +14,7 @@ export default function DynamicLetters() {
     }
 
     return (
-        <div className="dynamic-letters">
+        <div className="section dynamic-letters">
             <h1>Dynamic Letters</h1>
             <span>
                 I wanted to make letters part of the dynamic experience in websites.
@@ -73,7 +73,7 @@ export default function DynamicLetters() {
             <span>Slowing it down, randomize startring position and direction, makes it a nice ambient and organic feel...</span>
             <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO" />
 
-            <h2>Try it your self:</h2>
+            <h2>Try it your self*:</h2>
 
             <div className="settings">
                 <input className="dynamic-text-input" type="text" placeholder={placeholder} value={phrase} onChange={e => setPhrase(e.target.value)} />
@@ -87,6 +87,7 @@ export default function DynamicLetters() {
                 }} />
             </div>
             <FloatyLetters phrase={setPhraseDefault()} maxDuration={15 / Speed} minDuration={5 / Speed} />
+            <span>* Works best on Chrome, Safari seems to optimize efficiency and behaves badly.</span>
         </div>
     )
 }
