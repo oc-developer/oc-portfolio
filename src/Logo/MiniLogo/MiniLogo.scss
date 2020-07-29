@@ -1,0 +1,54 @@
+.mini-logo {
+    overflow: visible;
+    transform: rotate(-90deg);
+
+    .logo-o {
+        animation-name: mini-logo-o-trans-out;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .logo-d {
+        transform: translateY(3%);
+    }
+
+    .eye {
+        opacity: 0;
+    }
+
+    &:hover {
+        animation-name: robot-rotate;
+        animation-duration: 0.2s;
+        animation-delay: 0.5s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        .logo-o {
+            animation-name: mini-logo-o-trans-in;
+            animation-duration: 0.2s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .logo-d {
+            animation-name: mini-logo-d-trans;
+            animation-duration: 0.2s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .eye {
+            animation-name: open-eyes;
+            animation-delay: 1s;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+}
