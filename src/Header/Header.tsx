@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Header.css'
+import './Header.scss'
 
 import LeftbarIcon from '../Leftbar/LeftbarIcon/LeftbarIcon'
 import MiniLogo from '../Logo/MiniLogo/MiniLogo'
@@ -8,8 +8,12 @@ import MiniLogo from '../Logo/MiniLogo/MiniLogo'
 function Header() {
     return (
         <div className="header">
-            <LeftbarIcon />
-            <MiniLogo />
+            <div className="leftbar-btn">
+                <LeftbarIcon />
+            </div>
+            <div className="logo">
+                <MiniLogo />
+            </div>
         </div>
     )
 }
