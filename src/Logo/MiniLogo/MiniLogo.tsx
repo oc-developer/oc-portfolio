@@ -7,14 +7,11 @@ export default function MiniLogo() {
     return (
         <Link to="/">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="14.5" y="5.5" width="35" height="15" rx="7.5" stroke="black" strokeWidth="5" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M22 25H42C44.7614 25 47 27.2386 47 30V40H52V30C52 24.4772 47.5228 20 42 20H22C16.4772 20 12 24.4771 12 30V40H17V30C17 27.2386 19.2386 25 22 25Z" fill="black" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M17 40V50C17 52.7614 19.2386 55 22 55H42C44.7614 55 47 52.7614 47 50V40H52V50C52 55.5228 47.5228 60 42 60H22C16.4772 60 12 55.5228 12 50V40H17Z" fill="black" />
-                <line x1="15" y1="39.5" x2="49" y2="39.5" stroke="black" strokeWidth="5" />
-                <circle cx="25" cy="13" r="4" fill="black" />
-                <circle cx="39" cy="13" r="4" fill="black" />
-                <circle cx="26.5" cy="11.5" r="0.5" fill="white" />
-                <circle cx="40.5" cy="11.5" r="0.5" fill="white" />
+                <path fillRule="evenodd" clipRule="evenodd" d="M17 43V41H47V43C47 49.0751 42.0751 54 36 54H28C21.9249 54 17 49.0751 17 43ZM17 36H47H52V43C52 51.8366 44.8366 59 36 59H28C19.1634 59 12 51.8366 12 43V36H17Z" fill="black" />
+                <path fillRule="evenodd" clipRule="evenodd" d="M28 24H36C42.0751 24 47 28.9249 47 35V36H52V35C52 26.1634 44.8366 19 36 19H28C19.1634 19 12 26.1634 12 35V36H17V35C17 28.9249 21.9249 24 28 24Z" fill="black" />
+                <rect x="14.5" y="6.5" width="35" height="15" rx="7.5" stroke="black" strokeWidth="5" />
+                <path fillRule="evenodd" clipRule="evenodd" d="M25 18C27.2091 18 29 16.2091 29 14C29 11.7909 27.2091 10 25 10C22.7909 10 21 11.7909 21 14C21 16.2091 22.7909 18 25 18ZM26.5 13C26.7761 13 27 12.7761 27 12.5C27 12.2239 26.7761 12 26.5 12C26.2239 12 26 12.2239 26 12.5C26 12.7761 26.2239 13 26.5 13Z" fill="black" />
+                <path fillRule="evenodd" clipRule="evenodd" d="M39 18C41.2091 18 43 16.2091 43 14C43 11.7909 41.2091 10 39 10C36.7909 10 35 11.7909 35 14C35 16.2091 36.7909 18 39 18ZM40.5 13C40.7761 13 41 12.7761 41 12.5C41 12.2239 40.7761 12 40.5 12C40.2239 12 40 12.2239 40 12.5C40 12.7761 40.2239 13 40.5 13Z" fill="black" />
             </svg>
         </Link>
     )
