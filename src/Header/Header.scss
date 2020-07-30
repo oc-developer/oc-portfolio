@@ -6,6 +6,11 @@
     width: 100%;
     box-sizing: border-box;
 
+    &.fade-in {
+        animation-delay: 1.2s;
+        animation-duration: 2s;
+    }
+
     .leftbar-btn {
         position: absolute;
         left: 0;

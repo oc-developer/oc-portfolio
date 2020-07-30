@@ -1,0 +1,121 @@
+.mini-logo {
+    overflow: visible;
+    animation-name: logo-rotate-out;
+    animation-delay: 1s;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: rotate(-90deg);
+
+    .logo-o {
+        animation-name: mini-logo-o-trans-out;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transform: translateY(10%);
+    }
+
+    .logo-c {
+        animation-name: mini-logo-c-trans-out;
+        animation-delay: 0s;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transform: translateY(25%);
+    }
+
+    .logo-line {
+        animation-name: logo-line-out;
+        animation-delay: 1s;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    .logo-code {
+        animation-name: mini-logo-d-trans-out;
+        animation-delay: 0.2s;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        transform: translateY(3%);
+    }
+
+    .eye {
+        animation-name: open-eyes-out;
+        animation-delay: 1s;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    &:hover {
+        animation-name: logo-rotate-in;
+        animation-delay: 0.2s;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transform: rotate(0deg);
+
+        .logo-o {
+            animation-name: mini-logo-o-trans-in;
+            animation-duration: 0.2s;
+            animation-delay: 0.3s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            transform: translateY(0);
+        }
+
+        .logo-c {
+            animation-name: mini-logo-c-trans-in;
+            animation-duration: 0.2s;
+            animation-delay: 0.3s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            transform: translateY(0%);
+        }
+
+        .logo-line {
+            animation-name: logo-line-in;
+            animation-delay: 0s;
+            animation-duration: 0.2s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+
+        .logo-code {
+            animation-name: mini-logo-d-trans-in;
+            animation-duration: 0.2s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.3s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .eye {
+            animation-name: open-eyes-in;
+            animation-delay: 0s;
+            animation-duration: 0.2s;
+            animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+@keyframes mini-logo-o-trans-in {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
+@keyframes mini-logo-o-trans-out {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mini-logo-c-trans-in {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(25%);
+    }
+}
+@keyframes mini-logo-c-trans-out {
+    from {
+        transform: translateY(25%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes mini-logo-c-trans-in {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(25%);
+    }
+}
+
+@keyframes mini-logo-d-trans-in {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(3%);
+        opacity: 0;
+    }
+}
+@keyframes mini-logo-d-trans-out {
+    from {
+        transform: translateY(3%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes logo-line-in {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes logo-line-out {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes open-eyes-in {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes open-eyes-out {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logo-rotate-in {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes logo-rotate-out {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes o-trans {
+    from {
+        transform: translateY(5%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes d-trans {
+    from {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

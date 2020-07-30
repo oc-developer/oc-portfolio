@@ -1,71 +1,54 @@
-.logo-robot {
-    animation-name: robot-rotate;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
+.protagonist-section .logo {
+    animation-name: logo-rotate-out;
+    animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+    animation-duration: .5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: .75s;
     overflow: visible;
     transform: rotate(-90deg);
 
     .robot-eyes {
-        animation-name: open-eyes;
-        animation-duration: 0.5s;
-        animation-timing-function: ease-in-out;
+        animation-name: open-eyes-out;
+        animation-duration: 0.2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
         animation-iteration-count: 1;
-        animation-delay: 4s;
+        animation-delay: 1.5s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
 
     .logo-letter {
-        animation-timing-function: cubic-bezier(0.46, 0.42, 0.72, 1);
-        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        animation-delay: .5s;
+        animation-duration: .2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
 
     .logo-o {
         animation-name: o-trans;
+        transform: translateY(5%);
+    }
+
+    .logo-c {
+        animation-name: mini-logo-c-trans-out;
+        transform: translateY(25%);
+    }
+
+    .logo-line {
+        animation-name: logo-line-out;
+        animation-delay: 1.5s;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        opacity: 0;
     }
 
     .logo-d {
         animation-name: d-trans;
-    }
-
-    @keyframes open-eyes {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes robot-rotate {
-        from {
-            transform: rotate(-90deg);
-        }
-        to {
-            transform: rotate(0deg);
-        }
-    }
-
-    @keyframes o-trans {
-        from {
-            transform: translateY(-25%);
-        }
-        to {
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes d-trans {
-        from {
-            transform: translateY(25%);
-        }
-        to {
-            transform: translateY(0);
-        }
+        transform: translateY(25%);
+        opacity: 0;
+        animation-delay: 1s;
     }
 }
