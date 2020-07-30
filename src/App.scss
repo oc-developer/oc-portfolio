@@ -83,13 +83,7 @@
 .fade-in {
   animation-name: fadeIn;
   animation-duration: 4s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+  opacity: 0;
+  animation-fill-mode: forwards;
 }

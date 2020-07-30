@@ -7,7 +7,7 @@ import MiniLogo from '../Logo/MiniLogo/MiniLogo'
 
 function Header() {
     return (
-        <div className="header">
+        <div className="header fade-in">
             <div className="leftbar-btn">
                 <LeftbarIcon />
             </div>
