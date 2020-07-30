@@ -1,5 +1,5 @@
-.logo-robot {
-    animation-name: logo-rotate-in;
+.protagonist .logo {
+    animation-name: logo-rotate-out;
     animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -9,17 +9,16 @@
     transform: rotate(-90deg);
 
     .robot-eyes {
-        animation-name: open-eyes;
+        // animation-name: open-eyes;
         animation-duration: 0.2s;
         animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
         animation-iteration-count: 1;
         animation-delay: 3s;
         animation-fill-mode: forwards;
-        opacity: 0;
     }
 
     .logo-letter {
-        animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
+        // animation-timing-function: cubic-bezier(0.18, 0, 0, 0.98);
         animation-delay: 1s;
         animation-duration: 1s;
         animation-iteration-count: 1;
@@ -27,12 +26,10 @@
     }
 
     .logo-o {
-        animation-name: o-trans;
-        transform: translateY(-25%);
+        // animation-name: o-trans;
     }
 
     .logo-d {
-        animation-name: d-trans;
-        transform: translateY(25%);
+        // animation-name: d-trans;
     }
 }
