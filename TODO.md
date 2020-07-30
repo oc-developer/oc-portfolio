@@ -5,3 +5,4 @@
 * Header logo should default to O C
 * Work section
 * Main logo continues animation?
+* Floaty letter styling
