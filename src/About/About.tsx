@@ -1,10 +1,10 @@
 import React from 'react'
 import FloatyLetters from '../FloatyLetters/FloatyLetters'
-import './About.css'
+import './About.scss'
 
-export default function Home() {
+export default function About() {
     return (
-        <div className="home">
+        <div className="section about-section">
             <div className="welcome-banner">
                 <FloatyLetters phrase="HI THERE..." maxDuration={15} minDuration={5} />
             </div>
