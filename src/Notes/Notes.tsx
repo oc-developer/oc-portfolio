@@ -10,7 +10,7 @@ export default function Notes() {
     return (
         <div className="section grid-items notes-section">
             <h2 className="section-header">
-                Notes
+                notes
             </h2>
             <Link to={'floaty-letter'} className="section-content note note-floaty-letter">
                 <h2 className="note-header">
