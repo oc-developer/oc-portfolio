@@ -1,2 +1,5 @@
-* Fix spacing in floaty letter
-* Create a floaty letter flex box within component
+* Header menu glued to top
+* About me links and click
+* section overflow issue
+* left bar menu
+* Header logo should default to O C
