@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './DynamicLetters.css'
+import './DynamicLetters.scss'
 import FloatyLetters from '../../FloatyLetters/FloatyLetters'
 import DemoLetter from './TestLetter/TestLetter'
 

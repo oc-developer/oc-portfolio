@@ -14,10 +14,10 @@ export default function About() {
                 <div className="left">
                     <h3 className="header">Oliver Carlsson</h3>
                     <div className="dash"></div>
-                    <span className="breif">
+                    <span className="bio">
                         I’m a social developer,
                         I love to create in collaboration. I collaborate with design, development,
-                        creativity and sharing my passion. You got an interesting project?
+                        creativity and sharing my passion.
                         Please say hello!
                     </span>
                     <div className="links">
