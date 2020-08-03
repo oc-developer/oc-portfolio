@@ -8,7 +8,7 @@ import FloatyLetters from '../FloatyLetters/FloatyLetters'
 
 export default function Notes() {
     return (
-        <div className="section grid-items notes-section">
+        <div className="section grid-items notes-section" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <h2 className="section-header">
                 notes
             </h2>
