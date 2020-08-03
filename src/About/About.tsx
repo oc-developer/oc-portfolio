@@ -11,10 +11,12 @@ export default function About() {
                 <div className="left">
                     <h3 className="header">Oliver Carlsson</h3>
                     <div className="dash"></div>
-                    <span className="breif">I’m a social developer,
-                    I love to create in collaboration. I collaborate with design, development,
-                    creativity and sharing my passion. You got an interesting project?
-                    Please say hello!</span>
+                    <span className="breif">
+                        I’m a social developer,
+                        I love to create in collaboration. I collaborate with design, development,
+                        creativity and sharing my passion. You got an interesting project?
+                        Please say hello!
+                    </span>
                     <div className="links">
                         <a href="https://github.com/oc-developer">
                             <svg className="github-mark" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="62" height="60" viewBox="0 0 62 60">
