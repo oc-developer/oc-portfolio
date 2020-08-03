@@ -7,6 +7,7 @@ import './Animations.scss'
 import Header from './Header/Header'
 import Main from './Main/Main'
 import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
+import Leftbar from './Leftbar/leftbar'
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Route exact path="/" render={() => (
           <Main />
         )} />
+        <Leftbar />
       </div>
+
     </Router>
   );
 }

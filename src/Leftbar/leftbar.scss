@@ -1,23 +1,9 @@
 .leftbar {
     position: absolute;
-    top: 0;
     left: 0;
+    top:0;
     height: 100%;
-    width: 6em;
-    display: flex;
-    justify-content: center;
-}
-
-.leftbar .header {
-    display: flex;
-    height: 8em;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    width: 48px;
-    height: 48px;
-    background-color: black;
+    width: 50%;
+    z-index: 2;
+    background-color: darkcyan;
 }
