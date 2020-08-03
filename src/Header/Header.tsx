@@ -14,12 +14,14 @@ function Header() {
                 </div>
             </div>
             <div className="header-section center">
-                <div className="logo">
+                <div className="logo" onClick={() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}>
                     <MiniLogo />
                 </div>
             </div>
             <div className="header-section right"></div>
-        </div>
+        </div >
     )
 }
 
