@@ -10,9 +10,11 @@ export default function About() {
                 <div className="left">
                     <h3 className="header">Oliver Carlsson</h3>
                     <div className="dash"></div>
-                    <span className="breif">I’m a social developer, I love to create and to bring teams closer together. 
-                        I design, develop, create and share my passion. 
-                        You got an interesting project? Please say hello!</span>
+                    <span className="breif">I’m a social developer,
+                    I love to create in collaboration. I collaborate with design, development,
+                    creativity and sharing my passion. You got an interesting project?
+                    Please say hello!</span>
+                    <div>links</div>
                 </div>
                 <div className="right">
                     <img className="image-me" src={me} alt="Oliver" />
