@@ -7,3 +7,4 @@
 * Floaty letter styling
 * README
 * Responsive
+* Protagonist name styling
