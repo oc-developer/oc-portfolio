@@ -1,5 +1,5 @@
 import React from 'react'
-import './leftbar.css'
+import './leftbar.scss'
 import LeftbarIcon from './LeftbarIcon/LeftbarIcon'
 
 function Leftbar() {
