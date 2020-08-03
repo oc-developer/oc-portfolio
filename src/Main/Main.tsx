@@ -8,7 +8,7 @@ import About from '../About/About'
 
 export default function Main() {
     return (
-        <div className="main">
+        <div className="content">
             <Protagonist />
             <Notes />
             <About />

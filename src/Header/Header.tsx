@@ -8,12 +8,17 @@ import MiniLogo from '../Logo/MiniLogo/MiniLogo'
 function Header() {
     return (
         <div className="header fade-in">
-            <div className="leftbar-btn">
-                <LeftbarIcon />
+            <div className="header-section left">
+                <div className="leftbar-btn">
+                    <LeftbarIcon />
+                </div>
             </div>
-            <div className="logo">
-                <MiniLogo />
+            <div className="header-section center">
+                <div className="logo">
+                    <MiniLogo />
+                </div>
             </div>
+            <div className="header-section right"></div>
         </div>
     )
 }
