@@ -5,3 +5,4 @@
 * README
 * Responsive
 * Protagonist name styling
+* color palette https://colorsinspo.com/
