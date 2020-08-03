@@ -8,3 +8,4 @@
 * README
 * Responsive
 * Protagonist name styling
+* jerky animation in protagonist
