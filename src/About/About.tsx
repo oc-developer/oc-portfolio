@@ -4,6 +4,7 @@ import './About.scss'
 import me from './oliver-mini.jpeg'
 import github from '../Utils/github-mark.svg'
 import twitter from '../Utils/Twitter-logo.svg'
+import linkedIn from '../Utils/linkedin.svg'
 
 export default function About() {
     return (
@@ -21,10 +22,13 @@ export default function About() {
                     </span>
                     <div className="links">
                         <a href="https://github.com/oc-developer">
-                            <img className="github-mark" src={github} alt="github"/>
+                            <img className="logo" src={github} alt="github"/>
                         </a>
                         <a href="https://twitter.com/obecarlsson">
-                            <img className="twitter" src={twitter} alt="twitter"/>
+                            <img className="logo" src={twitter} alt="twitter"/>
+                        </a>
+                        <a href="www.linkedin.com/in/oliver-carlsson">
+                            <img className="logo" src={linkedIn} alt="LinkedIn"/>
                         </a>
                     </div>
                 </div>
