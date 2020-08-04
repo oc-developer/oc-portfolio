@@ -7,16 +7,21 @@ import { Link } from 'react-router-dom'
 function Leftbar() {
     return (
         <div className="leftbar">
-            <div>close button</div>
-            <div className="header">
-                Oliver Carlsson
+            <div className="leftbar-content">
+                <h2 className="header">
+                    Oliver Carlsson
+                </h2>
+                <div className="divider"></div>
+                <div className="links">
+                    <Link to={'/'}>
+                        <div className="link">Overview</div>
+                    </Link>
+                    <Link to={'/floaty-letter'}>
+                        <div className="link">Floaty letters</div>
+                    </Link>
+                </div>
             </div>
-            <Link to={'/'}>
-                <div>Overview</div>
-            </Link>
-            <Link to={'/floaty-letter'}>
-                <div>Floaty letters</div>
-            </Link>
+            <div>close button</div>
         </div>
     )
 }
