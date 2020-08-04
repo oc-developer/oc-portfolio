@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './leftbar.scss'
 import LeftbarIcon from './LeftbarIcon/LeftbarIcon'
 import { Link } from 'react-router-dom'
 
 
 function Leftbar() {
+    const [isOpen, setOpen] = useState(false);
+
+    function openLeftbar() {
+        setOpen(!isOpen);
+    }
+
     return (
-        <div className="leftbar">
-            <div className="leftbar-btn">
+        <div className={isOpen ? "leftbar open" : "leftbar"}>
+            <div className="leftbar-btn" onClick={() => openLeftbar()}>
                 <LeftbarIcon />
             </div>
             <div className="leftbar-content">
