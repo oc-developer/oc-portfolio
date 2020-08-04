@@ -19,6 +19,11 @@
         position: absolute;
         top: 0;
         left: 0;
+        fill: black;
+
+        &.open {
+            fill: white;
+        }
     }
 
     .leftbar-content {
@@ -49,8 +54,5 @@
     .link {
         margin-top: 0.5em;
         color: white;
-    }
-
-    .header {
     }
 }

@@ -13,8 +13,8 @@ function Leftbar() {
 
     return (
         <div className={isOpen ? "leftbar open" : "leftbar"}>
-            <div className="leftbar-btn" onClick={() => openLeftbar()}>
-                <LeftbarIcon />
+            <div className={isOpen ? "leftbar-btn open" : "leftbar-btn"}  onClick={() => openLeftbar()}>
+                <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
             <div className="leftbar-content">
                 <h2 className="header">
