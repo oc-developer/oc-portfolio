@@ -1,0 +1,41 @@
+.section-work {
+    background-color: darkolivegreen;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .work-place {
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: white;
+
+        h2 {
+            padding: 1em;
+        }
+
+        &.ictech {
+            padding: 1em;
+            background-color: #562f87;
+            width: 50%;
+
+            .ictech-logo {
+                width: 155px;
+                height: 35px;
+            }
+        }
+
+        &.wireless-car {
+            width: 50%;
+        }
+    }
+
+    .half {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
