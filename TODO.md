@@ -8,3 +8,4 @@
 * Text size increase?
 * disable body scroll in leftbar menu
 * close leftbar menu when navigating
+* logo looks bad on large screen
