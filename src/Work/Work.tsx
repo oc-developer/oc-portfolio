@@ -7,7 +7,7 @@ import tibco from '../Utils/tibco.svg'
 
 export default function Work() {
     return (
-        <div className="section grid-items">
+        <div className="section grid-items work">
             <h2 className="section-header">Work</h2>
             <div className="section-content section-work">
                 <div className="half">
