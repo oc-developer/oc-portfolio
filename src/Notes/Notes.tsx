@@ -1,18 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
-import './Notes.css'
+import './Notes.scss'
 
 import FloatyLetters from '../FloatyLetters/FloatyLetters'
 
 export default function Notes() {
     return (
-        <div className="section grid-items notes-section" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+        <div className="section grid-items" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <h2 className="section-header">
                 notes
             </h2>
-            <Link to={'floaty-letter'} className="section-content note note-floaty-letter">
+            <Link to={'floaty-letter'} className="section-content section-hover note note-floaty-letter">
                 <h2 className="note-header">
                     <FloatyLetters maxDuration={10} minDuration={3} phrase="FLOATY" />
                     <FloatyLetters maxDuration={10} minDuration={3} phrase="LETTERS" />

@@ -1,11 +1,10 @@
-* Work section
-* Main logo continues animation?
 * Floaty letter styling
-* README
-* Responsive
 * Protagonist name styling
 * color palette https://colorsinspo.com/
 * Text size increase?
-* disable body scroll in leftbar menu
+* Responsive
 * close leftbar menu when navigating
+* Main logo continues animation?
+* README
+* disable body scroll in leftbar menu
 * logo looks bad on large screen

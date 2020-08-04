@@ -3,6 +3,12 @@
     color: whitesmoke;
     flex: 100%;
     height: 400px;
+
+    &.section-hover {
+        &:hover .dash {
+            transform: rotate(170deg);
+        }
+    }
 }
 
 .note-text {

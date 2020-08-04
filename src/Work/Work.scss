@@ -1,0 +1,64 @@
+.work {
+    margin: 15vh 0 15vh;
+}
+
+.section-work {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .work-place {
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: white;
+        transition: all .2s ease-in-out;
+        border-radius: 8px;
+
+        &:hover.work-hover {
+            border-radius: 48px;
+            transform: scale(1.1);
+        }
+
+        span {
+            text-align: center;
+        }
+
+        h2 {
+            padding: 1em;
+        }
+
+        &.ictech {
+            padding: 1em;
+            background-color: #562f87;
+            width: 50%;
+
+            .ictech-logo {
+                width: 50%;
+            }
+        }
+
+        &.wireless-car {
+            width: 50%;
+            height: 100%;
+            background-color: #58c7fc;
+
+            .wcar-logo {
+                width: 50%;
+            }
+        }
+
+        &.tibco {
+            background-color: #222;
+        }
+    }
+
+    .half {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
