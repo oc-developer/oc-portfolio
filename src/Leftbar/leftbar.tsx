@@ -1,12 +1,34 @@
-import React from 'react'
-import './leftbar.css'
+import React, { useState } from 'react'
+import './leftbar.scss'
 import LeftbarIcon from './LeftbarIcon/LeftbarIcon'
+import { Link } from 'react-router-dom'
+
 
 function Leftbar() {
+    const [isOpen, setOpen] = useState(false);
+
+    function openLeftbar() {
+        setOpen(!isOpen);
+    }
+
     return (
-        <div className="leftbar">
-            <div className="header">
-                <LeftbarIcon />
+        <div className={isOpen ? "leftbar open" : "leftbar"}>
+            <div className={isOpen ? "leftbar-btn open" : "leftbar-btn"}  onClick={() => openLeftbar()}>
+                <LeftbarIcon state={isOpen ? 'open' : ''} />
+            </div>
+            <div className="leftbar-content">
+                <h2 className="header">
+                    Oliver Carlsson
+                </h2>
+                <div className="divider"></div>
+                <div className="links">
+                    <Link to={'/'}>
+                        <div className="link">Overview</div>
+                    </Link>
+                    <Link to={'/floaty-letter'}>
+                        <div className="link">Floaty letters</div>
+                    </Link>
+                </div>
             </div>
         </div>
     )

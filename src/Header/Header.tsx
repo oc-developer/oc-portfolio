@@ -2,16 +2,12 @@ import React from 'react'
 
 import './Header.scss'
 
-import LeftbarIcon from '../Leftbar/LeftbarIcon/LeftbarIcon'
 import MiniLogo from '../Logo/MiniLogo/MiniLogo'
 
 function Header() {
     return (
         <div className="header-top fade-in">
             <div className="header-section left">
-                <div className="leftbar-btn">
-                    <LeftbarIcon />
-                </div>
             </div>
             <div className="header-section center">
                 <div className="logo" onClick={() => {
