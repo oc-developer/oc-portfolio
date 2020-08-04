@@ -8,6 +8,13 @@
     background-color: darkcyan;
     color: white;
 
+    .leftbar-btn {
+        margin: 1em;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
     .leftbar-content {
         width: 100%;
         height: 50%;

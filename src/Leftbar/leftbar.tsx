@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom'
 function Leftbar() {
     return (
         <div className="leftbar">
+            <div className="leftbar-btn">
+                <LeftbarIcon />
+            </div>
             <div className="leftbar-content">
                 <h2 className="header">
                     Oliver Carlsson
@@ -21,7 +24,6 @@ function Leftbar() {
                     </Link>
                 </div>
             </div>
-            <div>close button</div>
         </div>
     )
 }
