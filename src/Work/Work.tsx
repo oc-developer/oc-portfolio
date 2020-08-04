@@ -3,6 +3,7 @@ import './Work.scss'
 
 import ictechLogo from '../Utils/ictech.png'
 import wcar from '../Utils/wirelesscar-white.svg'
+import tibco from '../Utils/tibco.svg'
 
 export default function Work() {
     return (
@@ -20,9 +21,10 @@ export default function Work() {
                         <span>Lead front-end developer for wireless car call center services developing and modernize the platform and its user experience.</span>
                     </a>
                 </div>
-                <div className="work-place">
-                    <h2>Tibco Spotfire</h2>
-                </div>
+                <a href="https://www.tibco.com/products/tibco-spotfire" className="work-place tibco">
+                    <img src={tibco} alt="TIBCO" />
+                    <span>Tibco Spotfire Application developer for the Data Analytics platform.</span>
+                </a>
             </div>
         </div>
     )
