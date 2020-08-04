@@ -1,5 +1,5 @@
 .leftbar {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 100%;
@@ -8,6 +8,7 @@
     color: white;
     clip-path: circle(10% at 2em 2em);
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 
     &.open {
         clip-path: circle(100%);
