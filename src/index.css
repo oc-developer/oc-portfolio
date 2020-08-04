@@ -16,6 +16,8 @@ body {
 
 h2 {
   margin: 0;
+  font-weight: 100;
+  font-size: 3em;
 }
 
 a {
