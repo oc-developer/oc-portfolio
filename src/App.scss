@@ -82,6 +82,12 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .content {
+      padding: 7em 2em 4em 1em;
+    }
+  }
 }
 
 .grid-items {
