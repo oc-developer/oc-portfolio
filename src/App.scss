@@ -82,17 +82,17 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .content {
+      padding: 7em 2em 4em 1em;
+    }
+  }
 }
 
 .grid-items {
   display: flex;
   flex-flow: row wrap;
-}
-
-@media (max-width: 600px) {
-  .section-header {
-    font-size: 27vw;
-  }
 }
 
 .note {

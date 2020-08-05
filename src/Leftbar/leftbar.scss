@@ -38,13 +38,13 @@
         align-items: center;
 
         .divider {
+            margin: 1em;
             background-color: white;
             width: 30%;
             height: 5px;
         }
 
         .links {
-            margin: 1em;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -56,5 +56,10 @@
         margin-top: 0.5em;
         color: white;
         font-size: 1.5em;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.3);
+        }
     }
 }

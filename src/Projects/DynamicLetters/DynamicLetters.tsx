@@ -4,7 +4,7 @@ import FloatyLetters from '../../FloatyLetters/FloatyLetters'
 import DemoLetter from './DemoLetter/DemoLetter'
 
 export default function DynamicLetters() {
-    const placeholder = 'Example...'
+    const placeholder = 'HELLO!'
     const [phrase, setPhrase] = useState('')
     const [Speed, setSpeed] = useState(1)
     const [SliderScale, setSliderScale] = useState(0)
@@ -74,22 +74,24 @@ export default function DynamicLetters() {
                     <DemoLetter xDuration={1} yDuration={0.651} letter="L" />
                     <DemoLetter xDuration={1} yDuration={0.651} letter="L" />
                     <DemoLetter xDuration={1} yDuration={0.651} letter="O" />
+                    <DemoLetter xDuration={1} yDuration={0.651} letter="!" />
                 </div>
                 <p>Randomize each letter basically gets us the floaty letter package...</p>
                 <div className="show-box" style={{ display: "flex" }}>
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="H" />
-                    <DemoLetter xDuration={1} yDuration={randDuration()} letter="E" />
+                    <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="E" />
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="L" />
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="L" />
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="O" />
+                    <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="!" />
                 </div>
                 <p>Slowing it down, randomize startring position and direction,
                     makes it a nice ambient and organic feel.</p>
-                <div className="show-box" style={{ fontSize: '2rem' }}>
-                    <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO" />
+                <div className="show-box" style={{ fontSize: '1.5rem' }}>
+                    <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO!" />
                 </div>
                 <div className="seperator"></div>
-                <h4>Try it yourself*:</h4>
+                <p>Try it yourself*:</p>
                 <div className="settings">
                     <input className="dynamic-text-input" type="text" placeholder={placeholder} value={phrase} onChange={e => setPhrase(e.target.value)} />
                     <br />

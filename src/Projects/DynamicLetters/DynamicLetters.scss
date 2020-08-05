@@ -7,6 +7,13 @@
         color: white;
         margin: 1em 0 2em 0;
     }
+
+    @media (max-width: 600px) {
+        .show-box {
+            font-size: 1.5em;
+            flex-direction: column;
+        }
+    }
 }
 
 .dynamic-letters {

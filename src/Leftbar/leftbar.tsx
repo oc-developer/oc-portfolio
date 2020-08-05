@@ -13,7 +13,7 @@ function Leftbar() {
 
     return (
         <div className={isOpen ? "leftbar open" : "leftbar"}>
-            <div className={isOpen ? "leftbar-btn open" : "leftbar-btn"}  onClick={() => openLeftbar()}>
+            <div className={isOpen ? "leftbar-btn open" : "leftbar-btn"} onClick={() => openLeftbar()}>
                 <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
             <div className="leftbar-content">
@@ -22,10 +22,10 @@ function Leftbar() {
                 </h3>
                 <div className="divider"></div>
                 <div className="links">
-                    <Link to={'/'}>
+                    <Link to={'/'} onClick={() => setOpen(false)}>
                         <div className="link">Overview</div>
                     </Link>
-                    <Link to={'/floaty-letter'}>
+                    <Link to={'/floaty-letter'} onClick={() => setOpen(false)}>
                         <div className="link">Floaty Letters</div>
                     </Link>
                 </div>
