@@ -9,7 +9,7 @@ import linkedIn from '../Utils/linkedin.svg'
 export default function About() {
     return (
         <div className="section grid-items section-about">
-            <h2 className="section-header">me</h2>
+            <h1 className="section-header">me</h1>
             <div className="section-content about-me">
                 <div className="left">
                     <h3 className="header">Oliver Carlsson</h3>

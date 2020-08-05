@@ -1,29 +1,27 @@
 .dynamic-letters {
-    padding-top: 10vw;
-}
+    .settings {
+        font-size: 1.5rem;
+    }
 
-.dynamic-letters .settings {
-    font-size: 1.5rem;
-}
+    .dynamic-text-input {
+        font-size: 1.5rem;
+        border-radius: 4px;
+        padding: 8px;
+        border-width: 0;
+        margin: 1rem 0;
+        outline: none;
+    }
 
-.dynamic-letters .dynamic-text-input {
-    font-size: 1.5rem;
-    border-radius: 4px;
-    padding: 8px;
-    border-width: 0;
-    margin: 1rem 0;
-    outline: none;
-}
-
-.dynamic-letters .floaty-letters {
-    font-size: 2rem;
-}
-
-.dynamic-letters .title-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
+    .floaty-letters {
+        font-size: 2rem;
+    }
+    
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
 }
 
 .floaty-demo .slow-box {

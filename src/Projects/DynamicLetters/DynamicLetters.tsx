@@ -14,15 +14,18 @@ export default function DynamicLetters() {
     }
 
     return (
-        <div className="section dynamic-letters">
-            <h1>Dynamic Letters</h1>
+        <div className="content">
+            <div className="section dynamic-letters">
+            </div>
+            <h2>Floaty Letters</h2>
             <span>
                 I wanted to make letters part of the dynamic experience in websites.
                 To make the site more alive I created an organic library that randomize
                 motion according to a few restrictions. <br /><br />
             </span>
             <span>
-                Floaty letter is based on css animation and uses an infinite loop of translate. It contains three boxes:
+                Floaty letter is based on css animation and uses an infinite loop of translate.
+                It contains three boxes:
             </span>
             <div style={{ display: "flex" }}>
                 <div className="title-box">
@@ -73,7 +76,7 @@ export default function DynamicLetters() {
             <span>Slowing it down, randomize startring position and direction, makes it a nice ambient and organic feel...</span>
             <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO" />
 
-            <h2>Try it your self*:</h2>
+            <h3>Try it yourself*:</h3>
 
             <div className="settings">
                 <input className="dynamic-text-input" type="text" placeholder={placeholder} value={phrase} onChange={e => setPhrase(e.target.value)} />
