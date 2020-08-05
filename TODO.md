@@ -1,4 +1,3 @@
-* Floaty letter styling
 * Protagonist name styling
 * color palette https://colorsinspo.com/
 * Text size increase?
