@@ -1,4 +1,3 @@
-* Protagonist name styling
 * color palette https://colorsinspo.com/
 * Text size increase?
 * Responsive
@@ -9,3 +8,4 @@
 * logo looks bad on large screen
 * leftbar hover animation
 * Dynamic letter word-wrap
+* Work hove looks bad

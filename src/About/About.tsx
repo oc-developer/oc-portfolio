@@ -14,12 +14,12 @@ export default function About() {
                 <div className="left">
                     <h3 className="header">Oliver Carlsson</h3>
                     <div className="dash"></div>
-                    <span className="bio">
+                    <p className="bio">
                         I’m a social developer,
                         I love to create in collaboration. I collaborate with design, development,
                         creativity and sharing my passion.
                         Please say hello!
-                    </span>
+                    </p>
                     <div className="links">
                         <a href="https://github.com/oc-developer">
                             <img className="logo" src={github} alt="github"/>
