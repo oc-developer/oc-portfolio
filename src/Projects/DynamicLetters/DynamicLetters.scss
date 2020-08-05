@@ -1,4 +1,18 @@
+.article {
+    .show-box {
+        padding: 2em;
+        font-size: 2.5em;
+        background-color: dimgray;
+        border-radius: 16px;
+        color: white;
+        margin: 2em 0;
+    }
+}
+
 .dynamic-letters {
+    .floaty-letters-header {
+        font-size: 4em;
+    }
     .settings {
         font-size: 1.5rem;
     }
@@ -12,10 +26,6 @@
         outline: none;
     }
 
-    .floaty-letters {
-        font-size: 2rem;
-    }
-    
     .title-box {
         display: flex;
         flex-direction: column;

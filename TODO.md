@@ -9,3 +9,4 @@
 * disable body scroll in leftbar menu
 * logo looks bad on large screen
 * leftbar hover animation
+* Dynamic letter word-wrap

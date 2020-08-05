@@ -14,6 +14,10 @@ body {
   position: relative;
 }
 
+p {
+  font-size: larger;
+}
+
 h1 {
   font-size: 18vw;
   font-weight: 100;
