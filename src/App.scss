@@ -28,6 +28,17 @@
       .article-header {
         text-align: center;
       }
+
+      .seperator {
+        width: 30%;
+        background-color: dimgray;
+        height: 5px;
+        margin: 2em 0;
+      }
+
+      .side-note {
+        font-size: 1em;
+      }
     }
 
     .article,
@@ -63,9 +74,6 @@
           transition-timing-function: ease-in-out;
         }
       }
-    }
-
-    .article {
     }
   }
 }

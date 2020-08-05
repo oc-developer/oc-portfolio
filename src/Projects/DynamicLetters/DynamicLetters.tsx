@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './DynamicLetters.scss'
 import FloatyLetters from '../../FloatyLetters/FloatyLetters'
-import DemoLetter from './TestLetter/TestLetter'
+import DemoLetter from './DemoLetter/DemoLetter'
 
 export default function DynamicLetters() {
     const placeholder = 'Example...'
@@ -35,38 +35,40 @@ export default function DynamicLetters() {
                     Floaty letters is based on css animation and uses an infinite loop and translates each letter individually.
                     It contains three boxes:
                     </p>
-                <div style={{ display: "flex" }}>
+                <div className="show-box" style={{ display: "flex" }}>
                     <div className="title-box">
                         <h4>X-Box</h4>
                         <DemoLetter showX={true} xDuration={1} />
                     </div>
                     <div className="title-box">
-                        <p><b>Y-Box</b></p>
+                        <h4>Y-Box</h4>
                         <DemoLetter showY={true} yDuration={1} />
                     </div>
                     <div className="title-box">
-                        <p><b>Letter-Box</b></p>
+                        <h4>Letter-Box</h4>
                         <DemoLetter letter="H" letterBg={true} />
                     </div>
                 </div>
                 <p>
-                    Putting these boxes together create a moving letter, but not very organic...
+                    Putting these boxes together create a moving letter, but it is not very organic.
                     </p>
-                <div style={{ display: "flex" }}>
+                <div className="show-box" style={{ display: "flex" }}>
                     <DemoLetter showX={true} xDuration={1} showY={true} yDuration={1} letter="H" letterBg={true} />
                     <DemoLetter letter="H" xDuration={1} yDuration={1} />
                 </div>
                 <p>
-                    ...however having different animation durations on the x and y-axis creates the feeling of the letter moving in an arbitrary way.
-                    </p>
-                <div style={{ display: "flex" }}>
+                    To make the letters feel organic we need to add randomness to the movement,
+                    we do this by giving the x and y axis different durations.
+                </p>
+                <div className="show-box" style={{ display: "flex" }}>
                     <DemoLetter showX={true} showY={true} letterBg={true} xDuration={1} yDuration={0.651} letter="H" />
                     <DemoLetter xDuration={1} yDuration={0.651} letter="H" />
                 </div>
                 <p>
-                    Using this technique when creating a phrase shows that it is important to have variation for each letter.
+                    Now the letter is not as predictable,
+                    but when each letter has the exakt same duration it becomes predictable again.
                     </p>
-                <div style={{ display: "flex" }}>
+                <div className="show-box" style={{ display: "flex" }}>
                     <DemoLetter xDuration={1} yDuration={0.651} letter="H" />
                     <DemoLetter xDuration={1} yDuration={0.651} letter="E" />
                     <DemoLetter xDuration={1} yDuration={0.651} letter="L" />
@@ -74,18 +76,20 @@ export default function DynamicLetters() {
                     <DemoLetter xDuration={1} yDuration={0.651} letter="O" />
                 </div>
                 <p>Randomize each letter basically gets us the floaty letter package...</p>
-                <div style={{ display: "flex" }}>
+                <div className="show-box" style={{ display: "flex" }}>
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="H" />
                     <DemoLetter xDuration={1} yDuration={randDuration()} letter="E" />
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="L" />
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="L" />
                     <DemoLetter xDuration={randDuration()} yDuration={randDuration()} letter="O" />
                 </div>
-                <p>Slowing it down, randomize startring position and direction, makes it a nice ambient and organic feel...</p>
-                <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO" />
-
+                <p>Slowing it down, randomize startring position and direction,
+                    makes it a nice ambient and organic feel.</p>
+                <div className="show-box" style={{ fontSize: '2rem' }}>
+                    <FloatyLetters maxDuration={15} minDuration={5} phrase="HELLO" />
+                </div>
+                <div className="seperator"></div>
                 <h4>Try it yourself*:</h4>
-
                 <div className="settings">
                     <input className="dynamic-text-input" type="text" placeholder={placeholder} value={phrase} onChange={e => setPhrase(e.target.value)} />
                     <br />
@@ -97,8 +101,12 @@ export default function DynamicLetters() {
                         setSpeed(Math.exp(value))
                     }} />
                 </div>
-                <FloatyLetters phrase={setPhraseDefault()} maxDuration={15 / Speed} minDuration={5 / Speed} />
-                <p>* Works best on Chrome, Safari seems to optimize efficiency and behaves badly.</p>
+                <div className="show-box">
+                    <FloatyLetters phrase={setPhraseDefault()} maxDuration={15 / Speed} minDuration={5 / Speed} />
+                </div>
+                <p className="side-note">* Works best on Chrome, Safari seems to optimize efficiency and behaves badly.
+                I still have a few bugs that needs to be take care of before I can publish it to npm.
+                </p>
             </div>
         </div>
     )

@@ -39,6 +39,13 @@ h3 {
   cursor: default;
 }
 
+h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 3vw;
+  cursor: default;
+}
+
 a {
   text-decoration: none;
 }
