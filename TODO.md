@@ -6,4 +6,4 @@
 * logo looks bad on large screen
 * leftbar hover animation
 * Dynamic letter word-wrap
-* Work hove looks bad
+* Work hover looks bad
