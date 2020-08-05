@@ -26,7 +26,7 @@ function Leftbar() {
                         <div className="link">Overview</div>
                     </Link>
                     <Link to={'/floaty-letter'}>
-                        <div className="link">Floaty letters</div>
+                        <div className="link">Floaty Letters</div>
                     </Link>
                 </div>
             </div>

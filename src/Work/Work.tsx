@@ -8,13 +8,13 @@ import tibco from '../Utils/tibco.svg'
 export default function Work() {
     return (
         <div className="section grid-items work">
-            <h1 className="section-header">Work</h1>
+            <h1 className="section-header">work</h1>
             <div className="section-content section-work">
                 <div className="half">
 
                     <a href="https://ictech.se/" className="work-place work-hover ictech">
                         <img className="ictech-logo" src={ictechLogo} alt="ictech" />
-                        <span> I'm currently a consultant at ictech, we are a creative tech-company for the software development industry, based out of Gothenburg.</span>
+                        <p> I'm currently a consultant at ictech, we are a creative tech-company for the software development industry, based out of Gothenburg.</p>
                     </a>
                     <a href="https://www.wirelesscar.com/" className="work-place work-hover wireless-car">
                         <img className="wcar-logo" src={wcar} alt="Wireless Car" />
