@@ -17,9 +17,9 @@ function Leftbar() {
                 <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
             <div className="leftbar-content">
-                <h2 className="header">
+                <h3 className="header">
                     Oliver Carlsson
-                </h2>
+                </h3>
                 <div className="divider"></div>
                 <div className="links">
                     <Link to={'/'}>
