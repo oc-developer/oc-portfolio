@@ -13,6 +13,7 @@
         .left {
             flex-direction: column;
             align-items: center;
+            justify-content: space-evenly;
             display: flex;
             position: absolute;
             top: 0;
@@ -28,7 +29,7 @@
             }
 
             .bio {
-                padding: 3em;
+                padding: 0 2em;
             }
 
             .links {
