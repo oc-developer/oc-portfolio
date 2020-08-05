@@ -1,4 +1,3 @@
-* Floaty letter styling
 * Protagonist name styling
 * color palette https://colorsinspo.com/
 * Text size increase?
@@ -8,3 +7,5 @@
 * README
 * disable body scroll in leftbar menu
 * logo looks bad on large screen
+* leftbar hover animation
+* Dynamic letter word-wrap

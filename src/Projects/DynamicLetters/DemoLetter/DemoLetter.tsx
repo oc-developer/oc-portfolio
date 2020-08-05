@@ -1,5 +1,5 @@
 import React from 'react'
-import './TestLetter.css'
+import './DemoLetter.scss'
 
 export default function DemoLetter(props: demoLetterProps) {
     const xBoxStyle: React.CSSProperties = {

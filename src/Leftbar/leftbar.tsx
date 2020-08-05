@@ -17,16 +17,16 @@ function Leftbar() {
                 <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
             <div className="leftbar-content">
-                <h2 className="header">
+                <h3 className="header">
                     Oliver Carlsson
-                </h2>
+                </h3>
                 <div className="divider"></div>
                 <div className="links">
                     <Link to={'/'}>
                         <div className="link">Overview</div>
                     </Link>
                     <Link to={'/floaty-letter'}>
-                        <div className="link">Floaty letters</div>
+                        <div className="link">Floaty Letters</div>
                     </Link>
                 </div>
             </div>
