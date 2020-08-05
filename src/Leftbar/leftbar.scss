@@ -38,13 +38,13 @@
         align-items: center;
 
         .divider {
+            margin: 1em;
             background-color: white;
             width: 30%;
             height: 5px;
         }
 
         .links {
-            margin: 1em;
             display: flex;
             flex-direction: column;
             justify-content: center;
