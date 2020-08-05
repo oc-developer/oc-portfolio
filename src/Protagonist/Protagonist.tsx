@@ -7,7 +7,7 @@ export default function Protagonist() {
     return (
         <div className="section protagonist-section">
             <Logo/>
-            <h4 className="fade-in">Oliver Carlsson</h4>
+            <h1 className="fade-in">Oliver Carlsson</h1>
         </div>
     )
 } 
