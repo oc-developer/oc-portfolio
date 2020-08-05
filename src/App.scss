@@ -89,12 +89,6 @@
   flex-flow: row wrap;
 }
 
-@media (max-width: 600px) {
-  .section-header {
-    font-size: 27vw;
-  }
-}
-
 .note {
   display: flex;
   flex-direction: column;
