@@ -18,12 +18,12 @@ export default function Work() {
                     </a>
                     <a href="https://www.wirelesscar.com/" className="work-place work-hover wireless-car">
                         <img className="wcar-logo" src={wcar} alt="Wireless Car" />
-                        <span>Lead front-end developer for wireless car call center services developing and modernize the platform and its user experience.</span>
+                        <p>Lead front-end developer for wireless car call center services developing and modernize the platform and its user experience.</p>
                     </a>
                 </div>
                 <a href="https://www.tibco.com/products/tibco-spotfire" className="work-place work-hover tibco">
                     <img src={tibco} alt="TIBCO" />
-                    <span>Tibco Spotfire Application developer for the Data Analytics platform.</span>
+                    <p>Tibco Spotfire Application developer for the Data Analytics platform.</p>
                 </a>
             </div>
         </div>
