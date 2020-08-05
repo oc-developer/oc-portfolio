@@ -1,5 +1,3 @@
-* color palette https://colorsinspo.com/
-* Text size increase?
 * Responsive
 * close leftbar menu when navigating
 * Main logo continues animation?
