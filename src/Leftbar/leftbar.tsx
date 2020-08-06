@@ -18,7 +18,7 @@ function Leftbar() {
             </div>
             <div className="leftbar-content">
                 <h3 className="header">
-                    Oliver Carlsson
+                    OC
                 </h3>
                 <div className="divider"></div>
                 <div className="links">
