@@ -1,4 +1,3 @@
-* Work hover looks bad
 * Main logo continues animation?
 * README
 * disable body scroll in leftbar menu
