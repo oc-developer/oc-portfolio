@@ -17,9 +17,9 @@ function Leftbar() {
                 <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
             <div className="leftbar-content">
-                <h3 className="header">
+                <h2 className="header">
                     OC
-                </h3>
+                </h2>
                 <div className="divider"></div>
                 <div className="links">
                     <Link to={'/'} onClick={() => setOpen(false)}>

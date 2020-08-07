@@ -20,7 +20,7 @@ export default function DynamicLetters() {
                     {/* Make sure word wrap works correctly, should only wrap round the word, not for each letter */}
                     {/* <FloatyLetters phrase="Floaty Letters" maxDuration={15} minDuration={5} /> */}
                 </span>
-                <h2>Floaty Letters</h2>
+                <h1>Floaty Letters</h1>
                 <p>
                     I wanted to add to find away for websites to feel more organic and alive. I thought,
                     by creating random movement in the letters,

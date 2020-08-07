@@ -19,7 +19,7 @@ p {
 }
 
 h1 {
-  font-size: 18vw;
+  font-size: 12em;
   font-weight: 100;
   margin: 0;
   cursor: default;
@@ -27,28 +27,58 @@ h1 {
 
 h2 {
   margin: 0;
+  font-size: 8em;
   font-weight: 100;
-  font-size: 14vw;
   cursor: default;
 }
 
 h3 {
   margin: 0;
   font-weight: 100;
-  font-size: 10vw;
+  font-size: 4em;
   cursor: default;
 }
 
 h4 {
   margin: 0;
   font-weight: 400;
-  font-size: 3vw;
+  font-size: 1em;
   cursor: default;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 14vw;
+  }
+
+  h2 {
+    font-size: 9vw;
+  }
+
+  h3 {
+    font-size: 4.5vw;
+  }
+
   h4 {
-    font-size: 3rem;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1em;
   }
 }
 
