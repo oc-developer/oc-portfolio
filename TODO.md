@@ -1,3 +1,5 @@
+* hamburger menu for phone has a cut
+* hamburger menu on touch will never return to hamburger after click
 * Main logo continues animation?
 * README
 * disable body scroll in leftbar menu
