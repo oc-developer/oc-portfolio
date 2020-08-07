@@ -9,6 +9,16 @@
             transform: rotate(170deg);
         }
     }
+
+    .article-header {
+        font-size: 5em;
+      }
+
+      @media (max-width: 1400px) {
+          .article-header {
+              font-size: 6vw;
+          }
+      }
 }
 
 .note-text {

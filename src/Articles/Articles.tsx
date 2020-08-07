@@ -12,7 +12,7 @@ export default function Articles() {
                 articles
             </h1>
             <Link to={'floaty-letter'} className="section-content section-hover note note-floaty-letter">
-                <h2 className="note-header">
+                <h2 className="article-header">
                     <FloatyLetters maxDuration={10} minDuration={3} phrase="FLOATY" />
                     <FloatyLetters maxDuration={10} minDuration={3} phrase="LETTERS" />
                 </h2>
