@@ -1,3 +1,5 @@
+* Contact formula
+* logo looks weird on iPhone
 * avoid hover when using touch
 * fav icon
 * Main logo continues animation?
