@@ -1,5 +1,4 @@
-* hamburger menu on touch will never return to hamburger after click
-* top menu logo does never return to OC after click
+* avoid hover when using touch
 * fav icon
 * Main logo continues animation?
 * README
