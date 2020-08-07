@@ -1,6 +1,5 @@
 * hamburger menu for phone has a cut
 * hamburger menu on touch will never return to hamburger after click
-* padding for protagonist name for phone
 * top menu logo does never return to OC after click
 * Main logo continues animation?
 * README
