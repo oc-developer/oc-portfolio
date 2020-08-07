@@ -1,5 +1,6 @@
 * hamburger menu for phone has a cut
 * hamburger menu on touch will never return to hamburger after click
+* padding for protagonist name for phone
 * Main logo continues animation?
 * README
 * disable body scroll in leftbar menu
