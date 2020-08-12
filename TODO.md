@@ -1,4 +1,5 @@
 * Contact formula
+* import text?
 * Picture of me higher up on the page?
 * Logo looks scales funny in the beginning on my work station.
 * Leftbar top should have navigatable logo.
