@@ -29,7 +29,6 @@
 
     .leftbar-content {
         width: 100%;
-        height: 50%;
         padding: 1em;
         box-sizing: border-box;
         flex-direction: column;
@@ -42,6 +41,11 @@
             h3 {
                 font-size: 10em;
             }
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
         }
 
         .divider {
