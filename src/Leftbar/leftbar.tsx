@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import './leftbar.scss'
+import './Leftbar.scss'
 import LeftbarIcon from './LeftbarIcon/LeftbarIcon'
 import { Link } from 'react-router-dom'
+import Logo from '../Logo/MiniLogo/MiniLogo'
 
 
-function Leftbar() {
+export default function Leftbar() {
     const [isOpen, setOpen] = useState(false);
 
     function openLeftbar() {
@@ -17,9 +18,11 @@ function Leftbar() {
                 <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
             <div className="leftbar-content">
-                <h2 className="header">
-                    OC
-                </h2>
+                <Link to={"/"} onClick={() => setOpen(false)}>
+                <div className="logo">
+                    <Logo color="white" />
+                </div>
+                </Link>
                 <div className="divider"></div>
                 <div className="links">
                     <Link to={'/'} onClick={() => setOpen(false)}>
@@ -33,5 +36,3 @@ function Leftbar() {
         </div>
     )
 }
-
-export default Leftbar

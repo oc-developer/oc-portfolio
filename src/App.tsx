@@ -7,7 +7,7 @@ import './Animations.scss'
 import Header from './Header/Header'
 import Main from './Main/Main'
 import DynamicLetters from './Projects/DynamicLetters/DynamicLetters'
-import Leftbar from './Leftbar/leftbar'
+import Leftbar from './Leftbar/Leftbar'
 
 function App() {
   return (

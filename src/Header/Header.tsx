@@ -2,7 +2,9 @@ import React from 'react'
 
 import './Header.scss'
 
-import MiniLogo from '../Logo/MiniLogo/MiniLogo'
+import Logo from '../Logo/MiniLogo/MiniLogo'
+import { Link } from 'react-router-dom'
+
 
 function Header() {
     return (
@@ -13,7 +15,9 @@ function Header() {
                 <div className="logo" onClick={() => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}>
-                    <MiniLogo />
+                    <Link to={"/"}>
+                        <Logo color="black" />
+                    </Link>
                 </div>
             </div>
             <div className="header-section right"></div>

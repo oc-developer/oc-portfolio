@@ -7,7 +7,7 @@
 * Logo looks bad on large screen
 
 # Improvements #
-* Leftbar top should have navigatable logo.
+* everything feels a bit slugish
 * Picture of me higher up on the page?
 * Dynamic letter word-wrap
 * Disable body scroll in leftbar menu
@@ -15,6 +15,7 @@
 * README
 
 # Features #
+* github deploy to github.io?
 * fav icon
 * Contact formula
 * Main logo continues animation?
