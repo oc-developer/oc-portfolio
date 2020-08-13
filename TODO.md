@@ -1,5 +1,5 @@
 # Bugs #
-* Leftbar link did not scroll to top on Antons phone.
+* Leftbar links scroll to top
 * floaty letter does not work with emoji
 * Logo looks scales funny in the beginning on my work station.
 * Avoid hover when using touch
