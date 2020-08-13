@@ -29,6 +29,11 @@
         justify-content: center;
         align-items: center;
         width: 33%;
+
+        .logo {
+            max-width: 64px;
+            max-height: 64px;
+        }
     }
 
     .right {
