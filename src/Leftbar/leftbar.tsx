@@ -17,11 +17,14 @@ export default function Leftbar() {
             <div className={isOpen ? "leftbar-btn open" : "leftbar-btn"} onClick={() => openLeftbar()}>
                 <LeftbarIcon state={isOpen ? 'open' : ''} />
             </div>
-            <div className="leftbar-content">
+            <div className="leftbar-content"
+                onClick={() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}>
                 <Link to={"/"} onClick={() => setOpen(false)}>
-                <div className="logo">
-                    <Logo color="white" />
-                </div>
+                    <div className="logo">
+                        <Logo color="white" />
+                    </div>
                 </Link>
                 <div className="divider"></div>
                 <div className="links">
