@@ -1,5 +1,4 @@
 # Bugs #
-* Leftbar links scroll to top
 * press enter /floaty-letter does not work. Maybe a limit in github.io
 * floaty letter does not work with emoji
 * Logo looks scales funny in the beginning on my work station.
@@ -11,8 +10,8 @@
 * everything feels a bit slugish
 * Picture of me higher up on the page?
 * Dynamic letter word-wrap
-* Disable body scroll in leftbar menu
 * Tests
+* Disable body scroll in leftbar menu
 * import text?
 * README
 
