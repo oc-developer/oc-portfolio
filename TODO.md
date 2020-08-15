@@ -12,6 +12,7 @@
 * Picture of me higher up on the page?
 * Dynamic letter word-wrap
 * Disable body scroll in leftbar menu
+* Tests
 * import text?
 * README
 
