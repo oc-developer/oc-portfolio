@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="app">
         <Header />
-        <Route exact path='/floaty-letter' render={() => (
+        <Route exact path='/#floaty-letter' render={() => (
           <DynamicLetters />
         )} />
         <Route exact path="/" render={() => (
