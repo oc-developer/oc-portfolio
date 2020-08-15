@@ -1,5 +1,6 @@
 # Bugs #
 * Leftbar links scroll to top
+* press enter /floaty-letter does not work. Maybe a limit in github.io
 * floaty letter does not work with emoji
 * Logo looks scales funny in the beginning on my work station.
 * Avoid hover when using touch
