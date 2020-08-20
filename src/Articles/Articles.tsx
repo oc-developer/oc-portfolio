@@ -11,7 +11,7 @@ export default function Articles() {
             <h1 className="section-header">
                 articles
             </h1>
-            <Link to={'floaty-letter'} className="section-content section-hover note note-floaty-letter">
+            <Link to={'/floaty-letter'} className="section-content section-hover note note-floaty-letter">
                 <h2 className="article-header">
                     <FloatyLetters maxDuration={10} minDuration={3} phrase="FLOATY" />
                     <FloatyLetters maxDuration={10} minDuration={3} phrase="LETTERS" />
