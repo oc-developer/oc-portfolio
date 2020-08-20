@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 
 import './App.scss'
 import './Animations.scss'
@@ -11,10 +11,10 @@ import Leftbar from './Leftbar/Leftbar'
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="app">
         <Header />
-        <Route exact path='/#floaty-letter' render={() => (
+        <Route exact path='/floaty-letter' render={() => (
           <DynamicLetters />
         )} />
         <Route exact path="/" render={() => (
@@ -23,7 +23,7 @@ function App() {
         <Leftbar />
       </div>
 
-    </Router>
+    </HashRouter>
   );
 }
 
