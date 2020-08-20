@@ -31,7 +31,7 @@ export default function Leftbar() {
                     <Link to={'/'} onClick={() => setOpen(false)}>
                         <div className="link">Overview</div>
                     </Link>
-                    <Link to={'/#floaty-letter'} onClick={() => setOpen(false)}>
+                    <Link to={'/floaty-letter'} onClick={() => setOpen(false)}>
                         <div className="link">Floaty Letters</div>
                     </Link>
                 </div>
