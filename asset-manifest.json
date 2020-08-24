@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f3d3b0e3.chunk.css",
-    "main.js": "/portfolio/static/js/main.a022846e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a022846e.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.e8e50220.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e8e50220.js.map",
-    "static/js/2.c646de5e.chunk.js": "/portfolio/static/js/2.c646de5e.chunk.js",
-    "static/js/2.c646de5e.chunk.js.map": "/portfolio/static/js/2.c646de5e.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.04dddce94e6305d9eefe5fe7f657aa87.js": "/portfolio/precache-manifest.04dddce94e6305d9eefe5fe7f657aa87.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.f3d3b0e3.chunk.css.map": "/portfolio/static/css/main.f3d3b0e3.chunk.css.map",
-    "static/js/2.c646de5e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c646de5e.chunk.js.LICENSE.txt",
-    "static/media/Twitter-logo.svg": "/portfolio/static/media/Twitter-logo.569d6308.svg",
-    "static/media/github-mark.svg": "/portfolio/static/media/github-mark.5871602b.svg",
-    "static/media/ictech.png": "/portfolio/static/media/ictech.e0d4c147.png",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.dd983895.svg",
-    "static/media/oliver-mini.jpeg": "/portfolio/static/media/oliver-mini.0582156d.jpeg",
-    "static/media/tibco.svg": "/portfolio/static/media/tibco.9df85f69.svg",
-    "static/media/wirelesscar-white.svg": "/portfolio/static/media/wirelesscar-white.5f06ade0.svg"
+    "main.css": "/oc-portfolio/static/css/main.f3d3b0e3.chunk.css",
+    "main.js": "/oc-portfolio/static/js/main.372476f5.chunk.js",
+    "main.js.map": "/oc-portfolio/static/js/main.372476f5.chunk.js.map",
+    "runtime-main.js": "/oc-portfolio/static/js/runtime-main.af41bd0e.js",
+    "runtime-main.js.map": "/oc-portfolio/static/js/runtime-main.af41bd0e.js.map",
+    "static/js/2.c646de5e.chunk.js": "/oc-portfolio/static/js/2.c646de5e.chunk.js",
+    "static/js/2.c646de5e.chunk.js.map": "/oc-portfolio/static/js/2.c646de5e.chunk.js.map",
+    "index.html": "/oc-portfolio/index.html",
+    "precache-manifest.9f2dd88a30828b9369a29c33fee835fb.js": "/oc-portfolio/precache-manifest.9f2dd88a30828b9369a29c33fee835fb.js",
+    "service-worker.js": "/oc-portfolio/service-worker.js",
+    "static/css/main.f3d3b0e3.chunk.css.map": "/oc-portfolio/static/css/main.f3d3b0e3.chunk.css.map",
+    "static/js/2.c646de5e.chunk.js.LICENSE.txt": "/oc-portfolio/static/js/2.c646de5e.chunk.js.LICENSE.txt",
+    "static/media/Twitter-logo.svg": "/oc-portfolio/static/media/Twitter-logo.569d6308.svg",
+    "static/media/github-mark.svg": "/oc-portfolio/static/media/github-mark.5871602b.svg",
+    "static/media/ictech.png": "/oc-portfolio/static/media/ictech.e0d4c147.png",
+    "static/media/linkedin.svg": "/oc-portfolio/static/media/linkedin.dd983895.svg",
+    "static/media/oliver-mini.jpeg": "/oc-portfolio/static/media/oliver-mini.0582156d.jpeg",
+    "static/media/tibco.svg": "/oc-portfolio/static/media/tibco.9df85f69.svg",
+    "static/media/wirelesscar-white.svg": "/oc-portfolio/static/media/wirelesscar-white.5f06ade0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8e50220.js",
+    "static/js/runtime-main.af41bd0e.js",
     "static/js/2.c646de5e.chunk.js",
     "static/css/main.f3d3b0e3.chunk.css",
-    "static/js/main.a022846e.chunk.js"
+    "static/js/main.372476f5.chunk.js"
   ]
 }
